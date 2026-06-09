@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
 import { Calendar, MapPin, Globe2, Users, Mic, ArrowRight } from "lucide-react";
 
@@ -101,11 +102,13 @@ function Index() {
 
       {/* Hero */}
       <section className="relative isolate flex min-h-screen items-end overflow-hidden">
-        <img
-          src={heroFields}
-          alt="Campos agrícolas vistos de cima"
-          width={1920}
-          height={1280}
+        <video
+          src={heroSpray.url}
+          poster={heroFields}
+          autoPlay
+          muted
+          loop
+          playsInline
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
