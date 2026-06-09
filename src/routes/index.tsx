@@ -235,26 +235,26 @@ function Index() {
       {/* Parceiros */}
       <section id="parceiros" className="border-t border-border">
         <div className="mx-auto max-w-7xl space-y-20 px-6 py-24">
-          <div>
+          <div className="text-center">
             <p className="text-xs uppercase tracking-widest text-primary">Organizadores</p>
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem realiza</h2>
-            <div className="mt-8 max-w-2xl">
+            <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={organizadores} cols="md:grid-cols-2" />
             </div>
           </div>
 
-          <div>
+          <div className="text-center">
             <p className="text-xs uppercase tracking-widest text-primary">Apoio institucional</p>
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem apoia</h2>
-            <div className="mt-8 max-w-2xl">
+            <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={apoio} cols="md:grid-cols-2" />
             </div>
           </div>
 
-          <div>
+          <div className="text-center">
             <p className="text-xs uppercase tracking-widest text-primary">Parceiros de mídia</p>
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
-            <div className="mt-8">
+            <div className="mt-8 mx-auto">
               <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
             </div>
           </div>
