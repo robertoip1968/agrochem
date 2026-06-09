@@ -2,6 +2,71 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroFields from "@/assets/hero-fields.jpg";
 import { Calendar, MapPin, Globe2, Users, Mic, ArrowRight } from "lucide-react";
 
+import allierLogo from "@/assets/logos/organizadores/allierbrasil-pt.jpg";
+import ccpLogo from "@/assets/logos/organizadores/ccp.jpg";
+import abisoloLogo from "@/assets/logos/apoio/abisolo.jpg";
+import anpiibioLogo from "@/assets/logos/apoio/anpiibio.jpg";
+import agribrasilisLogo from "@/assets/logos/parceiros-midia/agribrasilis_en.jpg";
+import agrofyLogo from "@/assets/logos/parceiros-midia/agrofy.jpg";
+import agropagesLogo from "@/assets/logos/parceiros-midia/logo-agropages.jpg";
+import agroperuLogo from "@/assets/logos/parceiros-midia/agroperu.jpg";
+import campoNegociosLogo from "@/assets/logos/parceiros-midia/campo-negocios.jpg";
+import globalAgricultureLogo from "@/assets/logos/parceiros-midia/global-agriculture.jpg";
+import globalCropLogo from "@/assets/logos/parceiros-midia/global-crop-protection.jpg";
+import krishakLogo from "@/assets/logos/parceiros-midia/krishakjagat.jpg";
+import portalAgroChileLogo from "@/assets/logos/parceiros-midia/portal-agro-chile.jpg";
+import publiagroLogo from "@/assets/logos/parceiros-midia/publiagro.jpg";
+import safrasLogo from "@/assets/logos/parceiros-midia/safras.jpg";
+import tierraFertilLogo from "@/assets/logos/parceiros-midia/tierra-fertil.jpg";
+
+const organizadores = [
+  { name: "Allier Brasil", src: allierLogo, href: "https://www.allierbrasil.com.br/" },
+  { name: "CCPIT Sub-Council of Chemical Industry", src: ccpLogo, href: "http://www.ccpitchem.org.cn/" },
+];
+const apoio = [
+  { name: "ABISOLO", src: abisoloLogo, href: "https://www.abisolo.com.br/" },
+  { name: "ANPII Bio", src: anpiibioLogo, href: "https://anpiibio.org.br/" },
+];
+const parceirosMidia = [
+  { name: "AgriBrasilis", src: agribrasilisLogo, href: "https://agribrasilis.com/" },
+  { name: "Agrofy", src: agrofyLogo, href: "https://www.agrofy.com.br/" },
+  { name: "AgroPages", src: agropagesLogo, href: "https://www.agropages.com/" },
+  { name: "AgroPeru", src: agroperuLogo, href: "https://www.agroperu.pe/" },
+  { name: "Campo & Negócios", src: campoNegociosLogo, href: "https://campoenegocios.com/" },
+  { name: "Global Agriculture", src: globalAgricultureLogo, href: "https://www.global-agriculture.com/" },
+  { name: "Global Crop Protection", src: globalCropLogo, href: "https://globalcropprotection.com/" },
+  { name: "Krishak Jagat", src: krishakLogo, href: "https://www.krishakjagat.org/about-krishak-jagat/" },
+  { name: "Portal Agro Chile", src: portalAgroChileLogo, href: "https://www.portalagrochile.cl/" },
+  { name: "Publiagro", src: publiagroLogo, href: "https://publiagro.com.bo/" },
+  { name: "Safras", src: safrasLogo, href: "https://safras.com.br/" },
+  { name: "Tierra Fértil", src: tierraFertilLogo, href: "https://tierrafertil.com.mx/" },
+];
+
+type Logo = { name: string; src: string; href: string };
+function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: string }) {
+  return (
+    <div className={`grid grid-cols-2 gap-4 sm:grid-cols-3 ${cols}`}>
+      {items.map((item) => (
+        <a
+          key={item.name}
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex h-24 items-center justify-center rounded-xl border border-border bg-background p-4 transition hover:border-primary/40 hover:shadow-sm"
+          title={item.name}
+        >
+          <img
+            src={item.src}
+            alt={item.name}
+            loading="lazy"
+            className="max-h-full max-w-full object-contain opacity-80 transition group-hover:opacity-100"
+          />
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -166,23 +231,28 @@ function Index() {
 
       {/* Parceiros */}
       <section id="parceiros" className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-20">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground">Organização e apoio</p>
-          <div className="mt-10 grid gap-12 md:grid-cols-3">
-            <div>
-              <h4 className="text-sm font-medium">Organizadores</h4>
-              <p className="mt-3 text-sm text-muted-foreground">Allier Brasil · CCPIT Sub-Council of Chemical Industry</p>
+        <div className="mx-auto max-w-7xl space-y-20 px-6 py-24">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-primary">Organizadores</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem realiza</h2>
+            <div className="mt-8 max-w-2xl">
+              <LogoGrid items={organizadores} cols="md:grid-cols-2" />
             </div>
-            <div>
-              <h4 className="text-sm font-medium">Apoio institucional</h4>
-              <p className="mt-3 text-sm text-muted-foreground">ABISOLO · ANPII Bio</p>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-primary">Apoio institucional</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem apoia</h2>
+            <div className="mt-8 max-w-2xl">
+              <LogoGrid items={apoio} cols="md:grid-cols-2" />
             </div>
-            <div>
-              <h4 className="text-sm font-medium">Parceiros de mídia</h4>
-              <p className="mt-3 text-sm text-muted-foreground">
-                AgriBrasilis, Agrofy, AgroPages, AgroPeru, Campo &amp; Negócios, Global Agriculture,
-                Global Crop Protection, Krishak Jagat, Portal Agro Chile, Publiagro, Safras, Tierra Fértil.
-              </p>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-primary">Parceiros de mídia</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
+            <div className="mt-8">
+              <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
             </div>
           </div>
         </div>
