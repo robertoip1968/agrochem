@@ -231,23 +231,28 @@ function Index() {
 
       {/* Parceiros */}
       <section id="parceiros" className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-20">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground">Organização e apoio</p>
-          <div className="mt-10 grid gap-12 md:grid-cols-3">
-            <div>
-              <h4 className="text-sm font-medium">Organizadores</h4>
-              <p className="mt-3 text-sm text-muted-foreground">Allier Brasil · CCPIT Sub-Council of Chemical Industry</p>
+        <div className="mx-auto max-w-7xl space-y-20 px-6 py-24">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-primary">Organizadores</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem realiza</h2>
+            <div className="mt-8 max-w-2xl">
+              <LogoGrid items={organizadores} cols="md:grid-cols-2" />
             </div>
-            <div>
-              <h4 className="text-sm font-medium">Apoio institucional</h4>
-              <p className="mt-3 text-sm text-muted-foreground">ABISOLO · ANPII Bio</p>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-primary">Apoio institucional</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem apoia</h2>
+            <div className="mt-8 max-w-2xl">
+              <LogoGrid items={apoio} cols="md:grid-cols-2" />
             </div>
-            <div>
-              <h4 className="text-sm font-medium">Parceiros de mídia</h4>
-              <p className="mt-3 text-sm text-muted-foreground">
-                AgriBrasilis, Agrofy, AgroPages, AgroPeru, Campo &amp; Negócios, Global Agriculture,
-                Global Crop Protection, Krishak Jagat, Portal Agro Chile, Publiagro, Safras, Tierra Fértil.
-              </p>
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-widest text-primary">Parceiros de mídia</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
+            <div className="mt-8">
+              <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
             </div>
           </div>
         </div>
