@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
+import aftermovie from "@/assets/aftermovie-2025.mp4.asset.json";
+import aftermoviePoster from "@/assets/aftermovie-2025-poster.jpg";
 import { Calendar, MapPin, Globe2, Users, ArrowRight } from "lucide-react";
 
 import allierLogo from "@/assets/logos/organizadores/allierbrasil-novo.jpg";
