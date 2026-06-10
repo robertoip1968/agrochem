@@ -20,6 +20,31 @@ import publiagroLogo from "@/assets/logos/parceiros-midia/publiagro.jpg";
 import safrasLogo from "@/assets/logos/parceiros-midia/safras.jpg";
 import tierraFertilLogo from "@/assets/logos/parceiros-midia/tierra-fertil.jpg";
 
+import elianaFontes from "@/assets/palestrantes/Eliana-Fontes.png";
+import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
+import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
+
+const palestrantes = [
+  {
+    name: "Eliana Maria Gouveia Fontes",
+    photo: elianaFontes,
+    theme: "Agricultura Regenerativa e Sustentabilidade",
+    bio: "Coordenadora científica do projeto Regenera Cerrado, bióloga, mestre em ecologia e doutora em entomologia, pesquisadora da Embrapa Recursos Genéticos e Biotecnologia. Foi editora-chefe da Revista Neotropical Entomology, diretora do Departamento do Patrimônio Genético do MMA, coordenadora geral de Ciências da Terra e Meio Ambiente do CNPq, secretária executiva da Comissão Técnica Nacional de Biossegurança no MCTI e coordenadora geral de qualidade de pesquisa no Departamento de P&D da Embrapa.",
+  },
+  {
+    name: "Marcelo da Costa Ferreira",
+    photo: marceloFerreira,
+    theme: "Desafios da Aplicação de Fitossanitários em Cenários de Demanda Alimentar e de Exigência Ambiental Crescente",
+    bio: "Engenheiro agrônomo pela Unesp de Jaboticabal, onde obteve títulos de mestre, doutor, livre-docente e professor titular. Realizou estágios pós-doutorais no Reino Unido e foi professor visitante sênior na Universidade de Lisboa. Chefe do Departamento de Fitossanidade da Unesp de Jaboticabal, coordenador do Núcleo de Estudos e Desenvolvimento da Tecnologia de Aplicação.",
+  },
+  {
+    name: "Luciana Fabri Mazza",
+    photo: lucianaMazza,
+    theme: "Aspectos importantes na judicialização de processos de registro de pesticidas",
+    bio: "Sócia do escritório Mazza e Manente de Almeida Advogados. Advogada formada pela Universidade Presbiteriana Mackenzie, pós-graduada em Direito Tributário e Processo Tributário pelo Instituto Brasileiro de Estudos Tributários. Atua nas áreas de Direito Público e Empresarial, com foco em contencioso e consultoria jurídica.",
+  },
+];
+
 const organizadores = [
   { name: "Allier Brasil", src: allierLogo, href: "https://www.allierbrasil.com.br/" },
   { name: "CCPIT Sub-Council of Chemical Industry", src: ccpLogo, href: "http://www.ccpitchem.org.cn/" },
