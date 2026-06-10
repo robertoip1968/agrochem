@@ -23,8 +23,15 @@ import tierraFertilLogo from "@/assets/logos/parceiros-midia/tierra-fertil.jpg";
 import elianaFontes from "@/assets/palestrantes/Eliana-Fontes.png";
 import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
 import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
+import flavioHirata from "@/assets/palestrantes/flavio-hirata.png";
 
 const palestrantes = [
+  {
+    name: "Flavio Hirata",
+    photo: flavioHirata,
+    theme: "Registro de agrotóxicos",
+    bio: "Sócio da AllierBrasil e fundador do look2agro™, engenheiro agrônomo pela Esalq/USP, MBA, e especialista em registro de agrotóxicos. A AllierBrasil é uma consultoria na área de registro de produtos. Há mais de 20 anos promove o agro brasileiro no Brasil e no exterior.",
+  },
   {
     name: "Eliana Maria Gouveia Fontes",
     photo: elianaFontes,
