@@ -335,34 +335,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Expositores */}
-      <section id="expositores" className="border-y border-border bg-secondary">
-        <div className="mx-auto max-w-7xl px-6 py-28">
-          <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-primary">Expositores</p>
-            <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem expõe</h2>
-            <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-              Empresas do Brasil, China, Índia e América Latina confirmadas na AgrochemShow 2026.
-            </p>
-          </div>
-          <div className="mt-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7">
-            {expositores.map((e) => (
-              <div
-                key={e.name}
-                className="flex h-20 items-center justify-center rounded-xl border border-border bg-background p-3 transition hover:border-primary/40 hover:shadow-sm"
-                title={e.name}
-              >
-                <img
-                  src={e.src}
-                  alt={e.name}
-                  loading="lazy"
-                  className="max-h-full max-w-full object-contain opacity-80 transition hover:opacity-100"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA inscrição */}
       <section id="inscricao" className="mx-auto max-w-7xl px-6 py-28">
@@ -400,6 +372,30 @@ function Index() {
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem apoia</h2>
             <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={apoio} cols="md:grid-cols-2" />
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-xs uppercase tracking-widest text-primary">Expositores</p>
+            <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem expõe</h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
+              Empresas do Brasil, China, Índia e América Latina confirmadas na AgrochemShow 2026.
+            </p>
+            <div className="mt-12 mx-auto grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7">
+              {expositores.map((e) => (
+                <div
+                  key={e.name}
+                  className="flex h-20 items-center justify-center rounded-xl border border-border bg-background p-3 transition hover:border-primary/40 hover:shadow-sm"
+                  title={e.name}
+                >
+                  <img
+                    src={e.src}
+                    alt={e.name}
+                    loading="lazy"
+                    className="max-h-full max-w-full object-contain opacity-80 transition hover:opacity-100"
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
