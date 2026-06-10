@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
-import { Calendar, MapPin, Globe2, Users, Mic, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Globe2, Users, ArrowRight } from "lucide-react";
 
 import allierLogo from "@/assets/logos/organizadores/allierbrasil-pt.jpg";
 import ccpLogo from "@/assets/logos/organizadores/ccp.jpg";
