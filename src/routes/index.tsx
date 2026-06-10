@@ -117,6 +117,7 @@ function Index() {
             <a href="#sobre" className="hover:text-white">Sobre</a>
             <a href="#destaques" className="hover:text-white">Destaques</a>
             <a href="#palestras" className="hover:text-white">Palestras</a>
+            <a href="#palestrantes" className="hover:text-white">Palestrantes</a>
             <a href="#parceiros" className="hover:text-white">Parceiros</a>
           </div>
           <a href="#inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
@@ -234,6 +235,31 @@ function Index() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Palestrantes */}
+      <section id="palestrantes" className="mx-auto max-w-7xl px-6 py-28">
+        <div className="text-center">
+          <p className="text-xs uppercase tracking-widest text-primary">Palestrantes</p>
+          <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
+        </div>
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
+          {palestrantes.map((p) => (
+            <div key={p.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition hover:border-primary/40 hover:shadow-sm">
+              <img
+                src={p.photo}
+                alt={p.name}
+                loading="lazy"
+                className="aspect-square w-full object-cover object-top"
+              />
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-xs font-medium uppercase tracking-widest text-primary">{p.theme}</p>
+                <h3 className="mt-3 text-xl font-medium">{p.name}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
