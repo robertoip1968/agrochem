@@ -184,11 +184,11 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="absolute inset-x-0 top-0 z-20">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-          <a href="#" className="inline-flex items-center rounded-lg bg-white/95 px-3 py-1.5 shadow-sm">
+          <a href="#" className="inline-flex items-center">
             <img
               src={logoAgrochemshow}
               alt="17º Brasil AgrochemShow — São Paulo"
-              className="h-9 w-auto"
+              className="h-[54px] w-auto drop-shadow-[0_1px_6px_rgba(255,255,255,0.5)]"
             />
           </a>
           <div className="hidden gap-8 text-sm text-white/80 md:flex">
