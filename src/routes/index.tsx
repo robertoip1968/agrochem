@@ -282,33 +282,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Palestras */}
-      <section id="palestras" className="border-y border-border bg-secondary">
-        <div className="mx-auto max-w-7xl px-6 py-28">
-          <div className="flex items-end justify-between gap-8">
-            <div>
-              <p className="text-xs uppercase tracking-widest text-primary">Programação</p>
-              <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Temas das palestras</h2>
-            </div>
-            <Mic className="hidden h-10 w-10 text-primary md:block" />
-          </div>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl bg-border md:grid-cols-3">
-            {[
-              "Mercado de agroquímicos",
-              "Registro e regulação",
-              "Meio ambiente",
-              "Bioinsumos",
-              "China — produção e exportação",
-              "América Latina — oportunidades",
-            ].map((tema, i) => (
-              <div key={tema} className="bg-background p-8">
-                <span className="text-xs text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
-                <p className="mt-3 text-lg font-medium">{tema}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Palestrantes */}
       <section id="palestrantes" className="mx-auto max-w-7xl px-6 py-28">
