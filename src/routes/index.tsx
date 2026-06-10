@@ -25,6 +25,70 @@ import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
 import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
 import flavioHirata from "@/assets/palestrantes/flavio-hirata.png";
 
+const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const expositorNames: Record<string, string> = {
+  hoosun: "Hoosun",
+  "xin-lian-xin": "Xin Lian Xin",
+  "youchuan-chem": "Youchuan Chem",
+  "hanling-fertilizer": "Hanling Fertilizer",
+  guanlong: "Guanlong Agrochemical",
+  "green-lands": "Green Lands",
+  look2agro: "look2agro",
+  abisolo: "Abisolo",
+  "agri-connection": "Agri Connection",
+  "allier-brasil": "Allier Brasil",
+  "bharat-rasayan": "Bharat Rasayan Limited",
+  brylian: "Brylian",
+  "ccpit-chem": "CCPIT Chem",
+  ele: "ELE Dispersers & Bead Mills",
+  generic: "Generic",
+  floken: "Floken",
+  "greenfield-chemical": "Greenfield Chemical",
+  "g-teck": "G-Teck",
+  "tcm-agriculture": "TCM Agriculture",
+  "good-harvest": "Good Harvest",
+  heben: "Heben",
+  iprochem: "Iprochem",
+  "jing-fung": "Jing Fung",
+  "liben-crop-science": "Liben Crop Science",
+  maxunitech: "Maxunitech",
+  zheji: "Zheji",
+  neoagro: "NeoAgro",
+  plantec: "Plantec Laboratórios",
+  qiantang: "Qiantang",
+  "rlf-agtech": "RLF AgTech",
+  "green-chemical": "Green Chemical",
+  sanfagro: "Sanfagro",
+  ultrafast: "Ultrafast",
+  xhchem: "XHChem",
+  "xingfa-group": "Xingfa Group",
+  "sino-agri": "Sino-Agri",
+  "china-jiangsu": "China Jiangsu International",
+  shimizu: "Shimizu Fertilizantes",
+  solus: "Solus do Brasil",
+  zupont: "Zupont",
+  als: "ALS",
+  farfly: "Farfly Brasil",
+  "u-express": "U-Express",
+  shizhuang: "Shizhuang",
+  meghmani: "Meghmani Organics",
+  "sci-agro": "Sci-Agro",
+  jiuyi: "Jiuyi Agriculture",
+  "pioneer-group": "Pioneer Group",
+  changqing: "Changqing",
+};
+
+const expositores = Object.entries(expositorFiles)
+  .map(([path, src]) => {
+    const slug = path.split("/").pop()!.replace(".png", "");
+    return { name: expositorNames[slug] ?? slug, src };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name, "pt"));
+
 const palestrantes = [
   {
     name: "Flavio Hirata",
@@ -125,6 +189,7 @@ function Index() {
             <a href="#destaques" className="hover:text-white">Destaques</a>
             <a href="#palestras" className="hover:text-white">Palestras</a>
             <a href="#palestrantes" className="hover:text-white">Palestrantes</a>
+            <a href="#expositores" className="hover:text-white">Expositores</a>
             <a href="#parceiros" className="hover:text-white">Parceiros</a>
           </div>
           <a href="#inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
@@ -267,6 +332,35 @@ function Index() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Expositores */}
+      <section id="expositores" className="border-y border-border bg-secondary">
+        <div className="mx-auto max-w-7xl px-6 py-28">
+          <div className="text-center">
+            <p className="text-xs uppercase tracking-widest text-primary">Expositores</p>
+            <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem expõe</h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
+              Empresas do Brasil, China, Índia e América Latina confirmadas na AgrochemShow 2026.
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7">
+            {expositores.map((e) => (
+              <div
+                key={e.name}
+                className="flex h-20 items-center justify-center rounded-xl border border-border bg-background p-3 transition hover:border-primary/40 hover:shadow-sm"
+                title={e.name}
+              >
+                <img
+                  src={e.src}
+                  alt={e.name}
+                  loading="lazy"
+                  className="max-h-full max-w-full object-contain opacity-80 transition hover:opacity-100"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
