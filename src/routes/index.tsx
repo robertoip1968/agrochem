@@ -3,8 +3,8 @@ import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
 import { Calendar, MapPin, Globe2, Users, ArrowRight } from "lucide-react";
 
-import allierLogo from "@/assets/logos/organizadores/allierbrasil-pt.jpg";
-import ccpLogo from "@/assets/logos/organizadores/ccp.jpg";
+import allierLogo from "@/assets/logos/organizadores/allierbrasil-novo.jpg";
+import ccpLogo from "@/assets/logos/organizadores/ccpit-chem-novo.jpg";
 import abisoloLogo from "@/assets/logos/apoio/abisolo.jpg";
 import anpiibioLogo from "@/assets/logos/apoio/anpiibio.jpg";
 import agribrasilisLogo from "@/assets/logos/parceiros-midia/agribrasilis_en.jpg";
