@@ -188,7 +188,7 @@ function Index() {
             <img
               src={logoAgrochemshow}
               alt="17º Brasil AgrochemShow — São Paulo"
-              className="h-[54px] w-auto drop-shadow-[0_1px_6px_rgba(255,255,255,0.5)]"
+              className="h-[81px] w-auto drop-shadow-[0_1px_6px_rgba(255,255,255,0.5)]"
             />
           </a>
           <div className="hidden gap-8 text-sm text-white/80 md:flex">
