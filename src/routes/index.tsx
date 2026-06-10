@@ -20,6 +20,31 @@ import publiagroLogo from "@/assets/logos/parceiros-midia/publiagro.jpg";
 import safrasLogo from "@/assets/logos/parceiros-midia/safras.jpg";
 import tierraFertilLogo from "@/assets/logos/parceiros-midia/tierra-fertil.jpg";
 
+import elianaFontes from "@/assets/palestrantes/Eliana-Fontes.png";
+import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
+import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
+
+const palestrantes = [
+  {
+    name: "Eliana Maria Gouveia Fontes",
+    photo: elianaFontes,
+    theme: "Agricultura Regenerativa e Sustentabilidade",
+    bio: "Coordenadora científica do projeto Regenera Cerrado, bióloga, mestre em ecologia e doutora em entomologia, pesquisadora da Embrapa Recursos Genéticos e Biotecnologia. Foi editora-chefe da Revista Neotropical Entomology, diretora do Departamento do Patrimônio Genético do MMA, coordenadora geral de Ciências da Terra e Meio Ambiente do CNPq, secretária executiva da Comissão Técnica Nacional de Biossegurança no MCTI e coordenadora geral de qualidade de pesquisa no Departamento de P&D da Embrapa.",
+  },
+  {
+    name: "Marcelo da Costa Ferreira",
+    photo: marceloFerreira,
+    theme: "Desafios da Aplicação de Fitossanitários em Cenários de Demanda Alimentar e de Exigência Ambiental Crescente",
+    bio: "Engenheiro agrônomo pela Unesp de Jaboticabal, onde obteve títulos de mestre, doutor, livre-docente e professor titular. Realizou estágios pós-doutorais no Reino Unido e foi professor visitante sênior na Universidade de Lisboa. Chefe do Departamento de Fitossanidade da Unesp de Jaboticabal, coordenador do Núcleo de Estudos e Desenvolvimento da Tecnologia de Aplicação.",
+  },
+  {
+    name: "Luciana Fabri Mazza",
+    photo: lucianaMazza,
+    theme: "Aspectos importantes na judicialização de processos de registro de pesticidas",
+    bio: "Sócia do escritório Mazza e Manente de Almeida Advogados. Advogada formada pela Universidade Presbiteriana Mackenzie, pós-graduada em Direito Tributário e Processo Tributário pelo Instituto Brasileiro de Estudos Tributários. Atua nas áreas de Direito Público e Empresarial, com foco em contencioso e consultoria jurídica.",
+  },
+];
+
 const organizadores = [
   { name: "Allier Brasil", src: allierLogo, href: "https://www.allierbrasil.com.br/" },
   { name: "CCPIT Sub-Council of Chemical Industry", src: ccpLogo, href: "http://www.ccpitchem.org.cn/" },
@@ -92,6 +117,7 @@ function Index() {
             <a href="#sobre" className="hover:text-white">Sobre</a>
             <a href="#destaques" className="hover:text-white">Destaques</a>
             <a href="#palestras" className="hover:text-white">Palestras</a>
+            <a href="#palestrantes" className="hover:text-white">Palestrantes</a>
             <a href="#parceiros" className="hover:text-white">Parceiros</a>
           </div>
           <a href="#inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
@@ -209,6 +235,31 @@ function Index() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Palestrantes */}
+      <section id="palestrantes" className="mx-auto max-w-7xl px-6 py-28">
+        <div className="text-center">
+          <p className="text-xs uppercase tracking-widest text-primary">Palestrantes</p>
+          <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
+        </div>
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
+          {palestrantes.map((p) => (
+            <div key={p.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition hover:border-primary/40 hover:shadow-sm">
+              <img
+                src={p.photo}
+                alt={p.name}
+                loading="lazy"
+                className="aspect-square w-full object-cover object-top"
+              />
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-xs font-medium uppercase tracking-widest text-primary">{p.theme}</p>
+                <h3 className="mt-3 text-xl font-medium">{p.name}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
