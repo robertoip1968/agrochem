@@ -285,6 +285,41 @@ function Index() {
       </section>
 
 
+      {/* Aftermovie 2025 */}
+      <section id="edicao-2025" className="border-y border-border bg-secondary">
+        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-28 md:grid-cols-12">
+          <div className="md:col-span-7">
+            <p className="text-xs uppercase tracking-widest text-primary">Edição 2025</p>
+            <h2 className="mt-4 text-4xl font-light leading-tight tracking-tight md:text-5xl">
+              Como foi a última edição.
+            </h2>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+              Reviva os melhores momentos da AgrochemShow 2025, realizada no Expo Center
+              Norte, em São Paulo — negócios fechados, palestras lotadas e conexões entre
+              empresas de mais de 20 países.
+            </p>
+            <a
+              href="#inscricao"
+              className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+            >
+              Participe em 2026 <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
+          <div className="md:col-span-5">
+            <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-3xl border border-border bg-background shadow-xl">
+              <video
+                src={aftermovie.url}
+                poster={aftermoviePoster}
+                controls
+                playsInline
+                preload="metadata"
+                className="aspect-[9/16] w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Palestrantes */}
       <section id="palestrantes" className="mx-auto max-w-7xl px-6 py-28">
         <div className="text-center">
