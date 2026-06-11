@@ -206,7 +206,7 @@ function Index() {
       </header>
 
       {/* Hero */}
-      <section className="relative isolate flex min-h-screen items-end overflow-hidden">
+      <section className="relative isolate flex min-h-[75vh] items-end overflow-hidden">
         <video
           src={heroSpray.url}
           poster={heroFields}
