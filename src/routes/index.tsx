@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
 import aftermovie from "@/assets/aftermovie-2025.mp4.asset.json";
@@ -199,9 +199,9 @@ function Index() {
             <a href="#expositores" className="transition hover:text-white/80">Expositores</a>
             <a href="#parceiros" className="transition hover:text-white/80">Parceiros</a>
           </div>
-          <a href="#inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
-            Pré-inscrição
-          </a>
+          <Link to="/inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
+            Fazer pré-inscrição
+          </Link>
         </nav>
       </header>
 
@@ -229,9 +229,9 @@ function Index() {
             mercado, registro, meio ambiente e novas tecnologias.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a href="#inscricao" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90">
+            <Link to="/inscricao" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90">
               Fazer pré-inscrição <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
             <a href="#sobre" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10">
               Conheça o evento
             </a>
@@ -303,12 +303,12 @@ function Index() {
               Expo Center Norte, em São Paulo — negócios fechados, palestras lotadas e
               conexões entre empresas de mais de 20 países.
             </p>
-            <a
-              href="#inscricao"
+            <Link
+              to="/inscricao"
               className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
             >
               Participe em 2026 <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
           <div className="md:col-span-5">
             <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-3xl border border-border bg-background shadow-xl">
@@ -360,14 +360,12 @@ function Index() {
           <p className="mx-auto mt-6 max-w-xl text-base text-primary-foreground/80">
             Pré-inscrições abertas. Reserve seu lugar entre os principais players do setor.
           </p>
-          <a
-            href="https://allierbrasil.com.br/agrochemshow/inscricao.php"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/inscricao"
             className="mt-10 inline-flex items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition hover:bg-background/90"
           >
             Fazer pré-inscrição <ArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
         </div>
       </section>
 
