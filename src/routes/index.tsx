@@ -159,7 +159,7 @@ function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: st
             src={item.src}
             alt={item.name}
             loading="lazy"
-            className="max-h-full max-w-full object-contain opacity-80 transition group-hover:opacity-100"
+            className="h-full w-full object-contain opacity-80 transition group-hover:opacity-100"
           />
         </a>
       ))}
