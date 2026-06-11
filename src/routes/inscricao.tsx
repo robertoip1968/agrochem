@@ -121,12 +121,12 @@ function InscricaoPage() {
 
       {/* Title */}
       <section className="border-b border-border bg-muted/30">
-        <div className="mx-auto max-w-6xl px-6 py-14">
+        <div className="mx-auto max-w-6xl px-6 py-14 text-center">
           <p className="text-sm uppercase tracking-widest text-primary">17º Brasil AgrochemShow</p>
           <h1 className="mt-3 text-4xl font-light tracking-tight text-foreground md:text-5xl">
             Pré-inscrição
           </h1>
-          <p className="mt-4 max-w-2xl text-base text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground">
             Preenchimento completo obrigatório. Os campos marcados com{" "}
             <span className="text-primary">*</span> são obrigatórios.
           </p>
