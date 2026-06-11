@@ -331,14 +331,14 @@ function Index() {
           <p className="text-sm uppercase tracking-widest text-primary">Palestrantes</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
         </div>
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 mx-auto grid max-w-3xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {palestrantes.map((p) => (
             <div key={p.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition hover:border-primary/40 hover:shadow-sm">
               <img
                 src={p.photo}
                 alt={p.name}
                 loading="lazy"
-                className="h-32 w-full object-cover object-top"
+                className="aspect-square w-full object-cover object-top"
               />
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-sm font-medium uppercase tracking-widest text-primary">{p.theme}</p>
