@@ -139,10 +139,10 @@ const parceirosMidia = [
   { name: "Portal Agro Chile", src: portalAgroChileLogo, href: "https://www.portalagrochile.cl/" },
   { name: "Publiagro", src: publiagroLogo, href: "https://publiagro.com.bo/" },
   { name: "Safras", src: safrasLogo, href: "https://safras.com.br/" },
-  { name: "Tierra Fértil", src: tierraFertilLogo, href: "https://tierrafertil.com.mx/" },
+  { name: "Tierra Fértil", src: tierraFertilLogo, href: "https://tierrafertil.com.mx/", imgClassName: "w-1/2" },
 ];
 
-type Logo = { name: string; src: string; href: string };
+type Logo = { name: string; src: string; href: string; imgClassName?: string };
 function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: string }) {
   return (
     <div className={`grid grid-cols-2 items-center gap-4 sm:grid-cols-3 ${cols}`}>
@@ -159,7 +159,7 @@ function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: st
             src={item.src}
             alt={item.name}
             loading="lazy"
-            className="h-full w-full object-contain opacity-80 transition group-hover:opacity-100"
+            className={`h-full w-full object-contain opacity-80 transition group-hover:opacity-100 ${item.imgClassName || ""}`}
           />
         </a>
       ))}
