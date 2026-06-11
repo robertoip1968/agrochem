@@ -338,7 +338,7 @@ function Index() {
                 src={p.photo}
                 alt={p.name}
                 loading="lazy"
-                className="aspect-square w-full object-cover object-top"
+                className="mx-auto aspect-square w-1/2 object-cover object-top"
               />
               <div className="flex flex-1 flex-col p-6">
                 <p className="text-sm font-medium uppercase tracking-widest text-primary">{p.theme}</p>
