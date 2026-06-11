@@ -170,9 +170,9 @@ function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: st
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AgrochemShow 2026 — Feira Internacional de Agroquímicos e Bioinsumos" },
+      { title: "17º Brasil AgrochemShow — Feira Internacional de Agroquímicos e Bioinsumos" },
       { name: "description", content: "3 e 4 de agosto de 2026, São Paulo. +1600 expositores e visitantes de +20 países. Palestras sobre mercado, registro, bioinsumos, China e América Latina." },
-      { property: "og:title", content: "AgrochemShow 2026" },
+      { property: "og:title", content: "17º Brasil AgrochemShow" },
       { property: "og:description", content: "Feira Internacional de Agroquímicos e Bioinsumos — São Paulo, 3 e 4 de agosto de 2026." },
     ],
   }),
