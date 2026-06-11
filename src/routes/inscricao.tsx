@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Loader2 } from "lucide-react";
 import logoAgrochemshow from "@/assets/logo-agrochemshow.png";
+import { enviarInscricao } from "@/lib/inscricao.functions";
 
 export const Route = createFileRoute("/inscricao")({
   head: () => ({
@@ -72,11 +73,27 @@ function Field({
 
 function InscricaoPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setErrorMsg(null);
+    setSending(true);
+    try {
+      const fd = new FormData(e.currentTarget);
+      const payload = Object.fromEntries(fd.entries()) as Record<string, string>;
+      await enviarInscricao({ data: payload as never });
+      setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (err) {
+      console.error(err);
+      setErrorMsg(
+        "Não foi possível enviar sua inscrição agora. Verifique os dados e tente novamente. Se o problema persistir, entre em contato com a organização.",
+      );
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -245,11 +262,16 @@ function InscricaoPage() {
           </Link>
           <button
             type="submit"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-base font-medium text-primary-foreground transition hover:opacity-90"
+            disabled={sending}
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-base font-medium text-primary-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            Enviar pré-inscrição
+            {sending && <Loader2 className="h-4 w-4 animate-spin" />}
+            {sending ? "Enviando…" : "Enviar pré-inscrição"}
           </button>
         </div>
+        {errorMsg && (
+          <p className="mt-4 text-center text-base text-destructive">{errorMsg}</p>
+        )}
         <p className="mt-6 text-center text-base text-muted-foreground">
           “Em breve você receberá um e-mail referente à sua inscrição. Por favor, aguarde.”
         </p>
