@@ -182,24 +182,24 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="absolute inset-x-0 top-0 z-20">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+      <header className="absolute inset-x-0 top-0 z-20 bg-white shadow-sm">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#" className="inline-flex items-center">
             <img
               src={logoAgrochemshow}
               alt="17º Brasil AgrochemShow — São Paulo"
-              className="h-[81px] w-auto drop-shadow-[0_1px_6px_rgba(255,255,255,0.5)]"
+              className="h-[72px] w-auto"
             />
           </a>
-          <div className="hidden gap-8 text-base font-semibold tracking-wide text-white md:flex">
-            <a href="#sobre" className="transition hover:text-white/80">Sobre</a>
-            <a href="#destaques" className="transition hover:text-white/80">Destaques</a>
-            <a href="#palestras" className="transition hover:text-white/80">Palestras</a>
-            <a href="#palestrantes" className="transition hover:text-white/80">Palestrantes</a>
-            <a href="#expositores" className="transition hover:text-white/80">Expositores</a>
-            <a href="#parceiros" className="transition hover:text-white/80">Parceiros</a>
+          <div className="hidden gap-8 text-lg font-bold tracking-wide text-black md:flex">
+            <a href="#sobre" className="transition hover:text-black/70">Sobre</a>
+            <a href="#destaques" className="transition hover:text-black/70">Destaques</a>
+            <a href="#palestras" className="transition hover:text-black/70">Palestras</a>
+            <a href="#palestrantes" className="transition hover:text-black/70">Palestrantes</a>
+            <a href="#expositores" className="transition hover:text-black/70">Expositores</a>
+            <a href="#parceiros" className="transition hover:text-black/70">Parceiros</a>
           </div>
-          <Link to="/inscricao" className="rounded-full bg-white px-4 py-2 text-base font-medium text-foreground transition hover:bg-white/90">
+          <Link to="/inscricao" className="rounded-full bg-primary px-4 py-2 text-base font-bold text-primary-foreground transition hover:opacity-90">
             Fazer pré-inscrição
           </Link>
         </nav>
