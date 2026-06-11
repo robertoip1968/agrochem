@@ -108,7 +108,7 @@ function InscricaoPage() {
       <header className="border-b border-border bg-foreground">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoAgrochemshow} alt="17º Brasil AgrochemShow" className="h-12 w-auto" />
+            <img src={logoAgrochemshow} alt="17º Brasil AgrochemShow" className="h-12 w-auto rounded-lg bg-white p-1" />
           </Link>
           <Link
             to="/"

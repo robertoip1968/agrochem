@@ -348,6 +348,15 @@ function Index() {
             </div>
           ))}
         </div>
+
+        {/* Bate-Papo */}
+        <div className="mt-20 text-center">
+          <p className="text-xs uppercase tracking-widest text-primary">Bate-Papo</p>
+          <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Em breve</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Novas conversas e interações serão anunciadas em breve.
+          </p>
+        </div>
       </section>
 
 
