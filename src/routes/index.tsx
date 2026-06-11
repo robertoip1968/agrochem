@@ -397,7 +397,6 @@ function Index() {
 
           <div className="text-center">
             <p className="text-sm uppercase tracking-widest text-primary">Parceiros de mídia</p>
-            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
             <div className="mt-8 mx-auto max-w-5xl">
               <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
             </div>
