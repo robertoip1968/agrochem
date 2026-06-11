@@ -105,14 +105,14 @@ function InscricaoPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-foreground">
+      <header className="border-b border-border bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoAgrochemshow} alt="17º Brasil AgrochemShow" className="h-12 w-auto rounded-lg bg-white p-1" />
+            <img src={logoAgrochemshow} alt="17º Brasil AgrochemShow" className="h-20 w-auto" />
           </Link>
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-base font-medium text-background/80 transition hover:text-background"
+            className="inline-flex items-center gap-2 text-base font-medium text-foreground/70 transition hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4" /> Voltar
           </Link>
@@ -250,6 +250,9 @@ function InscricaoPage() {
             Enviar pré-inscrição
           </button>
         </div>
+        <p className="mt-6 text-center text-base text-muted-foreground">
+          “Em breve você receberá um e-mail referente à sua inscrição. Por favor, aguarde.”
+        </p>
       </form>
     </main>
   );
