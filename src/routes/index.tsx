@@ -194,9 +194,9 @@ function Index() {
           <div className="hidden gap-8 text-lg font-bold tracking-wide text-black md:flex">
             <a href="#sobre" className="transition hover:text-black/70">Sobre</a>
             <a href="#destaques" className="transition hover:text-black/70">Destaques</a>
-            <a href="#palestras" className="transition hover:text-black/70">Palestras</a>
             <a href="#palestrantes" className="transition hover:text-black/70">Palestrantes</a>
-            <a href="#expositores" className="transition hover:text-black/70">Expositores</a>
+            <a href="#edicao-2025" className="transition hover:text-black/70">Edição de 2025</a>
+            <a href="#noticias" className="transition hover:text-black/70">Notícias</a>
             <a href="#parceiros" className="transition hover:text-black/70">Parceiros</a>
           </div>
           <Link to="/inscricao" className="rounded-full bg-primary px-4 py-2 text-base font-bold text-primary-foreground transition hover:opacity-90">
