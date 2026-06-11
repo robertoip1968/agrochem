@@ -44,7 +44,7 @@ const PAISES = [
 
 const inputCls =
   "w-full rounded-md border border-input bg-background px-3 py-2 text-sm text-foreground shadow-sm transition focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20";
-const labelCls = "mb-1.5 block text-xs font-medium uppercase tracking-wide text-muted-foreground";
+const labelCls = "mb-1.5 block text-sm font-medium uppercase tracking-wide text-muted-foreground";
 
 function Field({
   label,
@@ -65,7 +65,7 @@ function Field({
         {label} {required && <span className="text-primary">*</span>}
       </label>
       {children}
-      {hint && <p className="mt-1 text-xs text-muted-foreground">{hint}</p>}
+      {hint && <p className="mt-1 text-sm text-muted-foreground">{hint}</p>}
     </div>
   );
 }
@@ -93,7 +93,7 @@ function InscricaoPage() {
           </p>
           <Link
             to="/"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition hover:opacity-90"
           >
             <ArrowLeft className="h-4 w-4" /> Voltar ao site
           </Link>
@@ -112,7 +112,7 @@ function InscricaoPage() {
           </Link>
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-background/80 transition hover:text-background"
+            className="inline-flex items-center gap-2 text-base font-medium text-background/80 transition hover:text-background"
           >
             <ArrowLeft className="h-4 w-4" /> Voltar
           </Link>
@@ -122,11 +122,11 @@ function InscricaoPage() {
       {/* Title */}
       <section className="border-b border-border bg-muted/30">
         <div className="mx-auto max-w-6xl px-6 py-14">
-          <p className="text-xs uppercase tracking-widest text-primary">17º Brasil AgrochemShow</p>
+          <p className="text-sm uppercase tracking-widest text-primary">17º Brasil AgrochemShow</p>
           <h1 className="mt-3 text-4xl font-light tracking-tight text-foreground md:text-5xl">
             Pré-inscrição
           </h1>
-          <p className="mt-4 max-w-2xl text-sm text-muted-foreground">
+          <p className="mt-4 max-w-2xl text-base text-muted-foreground">
             Preenchimento completo obrigatório. Os campos marcados com{" "}
             <span className="text-primary">*</span> são obrigatórios.
           </p>
@@ -137,7 +137,7 @@ function InscricaoPage() {
       <form onSubmit={onSubmit} className="mx-auto max-w-6xl px-6 py-12">
         {/* Dados da empresa */}
         <fieldset className="rounded-2xl border border-border bg-card p-6 md:p-8">
-          <legend className="px-2 text-sm font-semibold uppercase tracking-wide text-primary">
+          <legend className="px-2 text-base font-semibold uppercase tracking-wide text-primary">
             Dados profissionais
           </legend>
           <div className="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -185,7 +185,7 @@ function InscricaoPage() {
 
         {/* Endereço */}
         <fieldset className="mt-8 rounded-2xl border border-border bg-card p-6 md:p-8">
-          <legend className="px-2 text-sm font-semibold uppercase tracking-wide text-primary">
+          <legend className="px-2 text-base font-semibold uppercase tracking-wide text-primary">
             Endereço
           </legend>
           <div className="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -221,10 +221,10 @@ function InscricaoPage() {
 
         {/* Indicações */}
         <fieldset className="mt-8 rounded-2xl border border-border bg-card p-6 md:p-8">
-          <legend className="px-2 text-sm font-semibold uppercase tracking-wide text-primary">
+          <legend className="px-2 text-base font-semibold uppercase tracking-wide text-primary">
             Indicações
           </legend>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <p className="mt-2 text-base text-muted-foreground">
             Indique abaixo conhecidos interessados em participar.
           </p>
           <div className="mt-4 grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -239,13 +239,13 @@ function InscricaoPage() {
         <div className="mt-10 flex flex-wrap items-center justify-end gap-4">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition hover:bg-muted"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-base font-medium text-foreground transition hover:bg-muted"
           >
             Cancelar
           </Link>
           <button
             type="submit"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-base font-medium text-primary-foreground transition hover:opacity-90"
           >
             Enviar pré-inscrição
           </button>
