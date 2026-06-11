@@ -299,9 +299,9 @@ function Index() {
               Como foi a última edição.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Reviva os melhores momentos do 16º Brasil AgrochemShow (2025), realizado no
-              Expo Center Norte, em São Paulo — negócios fechados, palestras lotadas e
-              conexões entre empresas de mais de 13 países.
+              Reviva os melhores momentos do 16º Brasil AgrochemShow (2025) —
+              negócios fechados, palestras lotadas, conexões entre empresas de mais
+              de 13 países e doação de 14 mil kg de alimentos doados para a ONG CrêSer.
             </p>
             <Link
               to="/inscricao"
