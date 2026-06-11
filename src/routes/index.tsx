@@ -246,7 +246,7 @@ function Index() {
             { icon: Calendar, label: "Quando", value: "3 e 4 de agosto, 2026" },
             { icon: MapPin, label: "Onde", value: "Centro de Eventos São Luís · São Paulo" },
             { icon: Globe2, label: "Alcance", value: "+13 países representados" },
-            { icon: Users, label: "Público", value: "+1500 expositores e visitantes" },
+            { icon: Users, label: "Público", value: "+1500 expositores e visitantes do Brasil, China, Índia, Europa e América Latina" },
           ].map(({ icon: Icon, label, value }) => (
             <div key={label} className="bg-background p-8">
               <Icon className="h-5 w-5 text-primary" />
