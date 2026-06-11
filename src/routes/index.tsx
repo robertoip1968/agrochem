@@ -27,6 +27,7 @@ import elianaFontes from "@/assets/palestrantes/Eliana-Fontes.png";
 import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
 import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
 import flavioHirata from "@/assets/palestrantes/flavio-hirata.png";
+import zhangJinlong from "@/assets/palestrantes/zhang-jinlong.jpeg";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
   eager: true,
@@ -116,6 +117,12 @@ const palestrantes = [
     photo: lucianaMazza,
     theme: "Aspectos importantes na judicialização de processos de registro de pesticidas",
     bio: "Sócia do escritório Mazza e Manente de Almeida Advogados. Advogada formada pela Universidade Presbiteriana Mackenzie, pós-graduada em Direito Tributário e Processo Tributário pelo Instituto Brasileiro de Estudos Tributários. Atua nas áreas de Direito Público e Empresarial, com foco em contencioso e consultoria jurídica.",
+  },
+  {
+    name: "Zhang Jinlong",
+    photo: zhangJinlong,
+    theme: "Desafios na cadeia de suprimentos da China",
+    bio: "Pesquisador independente com mais de 20 anos de experiência na indústria de agroquímicos da China e mais de 15 anos de atuação em registro e vendas para o Brasil. Especialista em desenvolvimento de produtos, registro e gestão de Planejamento de Vendas e Operações (S&OP).",
   },
 ];
 
