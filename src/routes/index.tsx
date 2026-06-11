@@ -191,7 +191,7 @@ function Index() {
               className="h-[81px] w-auto drop-shadow-[0_1px_6px_rgba(255,255,255,0.5)]"
             />
           </a>
-          <div className="hidden gap-8 text-sm font-semibold tracking-wide text-white md:flex">
+          <div className="hidden gap-8 text-base font-semibold tracking-wide text-white md:flex">
             <a href="#sobre" className="transition hover:text-white/80">Sobre</a>
             <a href="#destaques" className="transition hover:text-white/80">Destaques</a>
             <a href="#palestras" className="transition hover:text-white/80">Palestras</a>
@@ -199,7 +199,7 @@ function Index() {
             <a href="#expositores" className="transition hover:text-white/80">Expositores</a>
             <a href="#parceiros" className="transition hover:text-white/80">Parceiros</a>
           </div>
-          <Link to="/inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
+          <Link to="/inscricao" className="rounded-full bg-white px-4 py-2 text-base font-medium text-foreground transition hover:bg-white/90">
             Fazer pré-inscrição
           </Link>
         </nav>
@@ -218,7 +218,7 @@ function Index() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
         <div className="mx-auto w-full max-w-7xl px-6 pb-20 pt-40">
-          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-white backdrop-blur">
+          <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-sm font-medium uppercase tracking-widest text-white backdrop-blur">
             Save the date · 17º Brasil AgrochemShow
           </p>
           <h1 className="max-w-4xl text-5xl font-light leading-[1.05] tracking-tight text-white md:text-7xl">
@@ -229,10 +229,10 @@ function Index() {
             mercado, registro, meio ambiente e novas tecnologias.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link to="/inscricao" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90">
+            <Link to="/inscricao" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition hover:opacity-90">
               Fazer pré-inscrição <ArrowRight className="h-4 w-4" />
             </Link>
-            <a href="#sobre" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10">
+            <a href="#sobre" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-base font-medium text-white transition hover:bg-white/10">
               Conheça o evento
             </a>
           </div>
@@ -250,7 +250,7 @@ function Index() {
           ].map(({ icon: Icon, label, value }) => (
             <div key={label} className="bg-background p-8">
               <Icon className="h-5 w-5 text-primary" />
-              <p className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">{label}</p>
+              <p className="mt-4 text-sm uppercase tracking-widest text-muted-foreground">{label}</p>
               <p className="mt-2 text-base font-medium text-foreground">{value}</p>
             </div>
           ))}
@@ -261,7 +261,7 @@ function Index() {
       <section id="destaques" className="mx-auto max-w-7xl px-6 py-28">
         <div className="grid gap-16 md:grid-cols-12">
           <div className="md:col-span-5">
-            <p className="text-xs uppercase tracking-widest text-primary">O evento</p>
+            <p className="text-sm uppercase tracking-widest text-primary">O evento</p>
             <h2 className="mt-4 text-4xl font-light leading-tight tracking-tight md:text-5xl">
               O ponto de encontro da cadeia global de agroquímicos.
             </h2>
@@ -281,7 +281,7 @@ function Index() {
               ].map((item) => (
                 <div key={item.title}>
                   <h3 className="text-base font-medium">{item.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{item.text}</p>
+                  <p className="mt-2 text-base text-muted-foreground">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -294,7 +294,7 @@ function Index() {
       <section id="edicao-2025" className="border-y border-border bg-secondary">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 py-28 md:grid-cols-12">
           <div className="md:col-span-7">
-            <p className="text-xs uppercase tracking-widest text-primary">Edição 2025</p>
+            <p className="text-sm uppercase tracking-widest text-primary">Edição 2025</p>
             <h2 className="mt-4 text-4xl font-light leading-tight tracking-tight md:text-5xl">
               Como foi a última edição.
             </h2>
@@ -305,7 +305,7 @@ function Index() {
             </p>
             <Link
               to="/inscricao"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
+              className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition hover:opacity-90"
             >
               Participe em 2026 <ArrowRight className="h-4 w-4" />
             </Link>
@@ -328,7 +328,7 @@ function Index() {
       {/* Palestrantes */}
       <section id="palestrantes" className="mx-auto max-w-7xl px-6 py-28">
         <div className="text-center">
-          <p className="text-xs uppercase tracking-widest text-primary">Palestrantes</p>
+          <p className="text-sm uppercase tracking-widest text-primary">Palestrantes</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
         </div>
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -341,9 +341,9 @@ function Index() {
                 className="aspect-square w-full object-cover object-top"
               />
               <div className="flex flex-1 flex-col p-6">
-                <p className="text-xs font-medium uppercase tracking-widest text-primary">{p.theme}</p>
+                <p className="text-sm font-medium uppercase tracking-widest text-primary">{p.theme}</p>
                 <h3 className="mt-3 text-xl font-medium">{p.name}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">{p.bio}</p>
               </div>
             </div>
           ))}
@@ -351,7 +351,7 @@ function Index() {
 
         {/* Bate-Papo */}
         <div className="mt-20 text-center">
-          <p className="text-xs uppercase tracking-widest text-primary">Bate-Papo</p>
+          <p className="text-sm uppercase tracking-widest text-primary">Bate-Papo</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Em breve</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Novas conversas e interações serão anunciadas em breve.
@@ -371,7 +371,7 @@ function Index() {
           </p>
           <Link
             to="/inscricao"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition hover:bg-background/90"
+            className="mt-10 inline-flex items-center gap-2 rounded-full bg-background px-6 py-3 text-base font-medium text-foreground transition hover:bg-background/90"
           >
             Fazer pré-inscrição <ArrowRight className="h-4 w-4" />
           </Link>
@@ -382,7 +382,7 @@ function Index() {
       <section id="parceiros" className="border-t border-border">
         <div className="mx-auto max-w-7xl space-y-20 px-6 py-24">
           <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-primary">Organizadores</p>
+            <p className="text-sm uppercase tracking-widest text-primary">Organizadores</p>
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem realiza</h2>
             <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={organizadores} cols="md:grid-cols-2" />
@@ -390,7 +390,7 @@ function Index() {
           </div>
 
           <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-primary">Apoio institucional</p>
+            <p className="text-sm uppercase tracking-widest text-primary">Apoio institucional</p>
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem apoia</h2>
             <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={apoio} cols="md:grid-cols-2" />
@@ -398,7 +398,7 @@ function Index() {
           </div>
 
           <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-primary">Expositores</p>
+            <p className="text-sm uppercase tracking-widest text-primary">Expositores</p>
             <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem expõe</h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
               Empresas do Brasil, China, Índia e América Latina confirmadas no 17º Brasil AgrochemShow.
@@ -422,7 +422,7 @@ function Index() {
           </div>
 
           <div className="text-center">
-            <p className="text-xs uppercase tracking-widest text-primary">Parceiros de mídia</p>
+            <p className="text-sm uppercase tracking-widest text-primary">Parceiros de mídia</p>
             <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
             <div className="mt-8 mx-auto">
               <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
@@ -432,7 +432,7 @@ function Index() {
       </section>
 
       <footer className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-muted-foreground">
+        <div className="mx-auto max-w-7xl px-6 py-12 text-base text-muted-foreground">
           <div className="grid gap-10 md:grid-cols-2">
             <div>
               <p className="text-base font-medium text-foreground">17º Brasil AgrochemShow</p>
