@@ -1,9 +1,11 @@
 {
   "version": 1,
-  "asset_id": "ec71fe8c-20ac-4754-a2ec-18fc5291f5f2",
+  "asset_id": "3725ba80-e0c8-499b-9a39-be54bd73dc7c",
   "project_id": "ebbaec03-f61a-4722-9ecb-43bb36e24881",
-  "url": "/__l5e/assets-v1/ec71fe8c-20ac-4754-a2ec-18fc5291f5f2/hero-spray.mp4",
+  "url": "/__l5e/assets-v1/3725ba80-e0c8-499b-9a39-be54bd73dc7c/hero-spray.mp4",
+  "r2_key": "a/v1/ebbaec03-f61a-4722-9ecb-43bb36e24881/3725ba80-e0c8-499b-9a39-be54bd73dc7c/hero-spray.mp4",
   "original_filename": "hero-spray.mp4",
-  "size": 19869121,
-  "created_at": "2026-06-09T15:28:37Z"
+  "size": 51377700,
+  "content_type": "video/mp4",
+  "created_at": "2026-06-11T18:47:13Z"
 }
