@@ -145,7 +145,7 @@ const parceirosMidia = [
 type Logo = { name: string; src: string; href: string };
 function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: string }) {
   return (
-    <div className={`grid grid-cols-2 gap-4 sm:grid-cols-3 ${cols}`}>
+    <div className={`grid grid-cols-2 items-center gap-4 sm:grid-cols-3 ${cols}`}>
       {items.map((item) => (
         <a
           key={item.name}
