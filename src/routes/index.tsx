@@ -432,40 +432,68 @@ function Index() {
       </section>
 
       <footer className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-12 text-base text-muted-foreground">
-          <div className="grid gap-10 md:grid-cols-2">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          {/* Informações sobre o evento */}
+          <div className="mb-12">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">Informações sobre o evento</p>
+            <p className="mt-4 max-w-4xl text-base leading-relaxed text-muted-foreground">
+              Organizado pela AllierBrasil em parceria com a CCPIT Chem, da China, o evento busca aproximar
+              empresas nacionais e estrangeiras, estimular parcerias técnico-comerciais e ampliar a troca de
+              informações sobre agroquímicos, bioinsumos, mercado, registro, meio ambiente e inovação agrícola.
+              A expectativa é reunir mais de 1.500 expositores e visitantes dos setores de agroquímicos,
+              bioinsumos, tecnologia regulatória, logística, pesquisa, consultoria, distribuição e inovação agrícola.
+            </p>
+            <p className="mt-4 max-w-4xl text-base leading-relaxed text-muted-foreground">
+              As inscrições devem ser realizadas pelo portal AgrochemShow.com.br, por meio de doações de cestas
+              básicas para a ONG Crê-Ser, de São Paulo. Em 2025, foram arrecadados 14.000 kg de alimentos.
+            </p>
+          </div>
+
+          <div className="grid gap-10 md:grid-cols-3">
             <div>
-              <p className="text-base font-medium text-foreground">17º Brasil AgrochemShow</p>
-              <p className="mt-2">Rua Luís Coelho, 323 — São Paulo, Brasil</p>
-              <p className="mt-1">3 e 4 de agosto de 2026</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary">Serviço</p>
+              <p className="mt-3 text-base font-medium text-foreground">3 e 4 de agosto de 2026</p>
+              <p className="mt-2 text-base text-muted-foreground">
+                Centro de Eventos São Luís<br />
+                Rua Luís Coelho, 323, São Paulo
+              </p>
+              <p className="mt-2 text-base text-muted-foreground">
+                Pontos de referência: Estação Paulista, 150 m; Estação Consolação, 300 m; Avenida Paulista, 300 m.
+              </p>
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-primary">Mais informações</p>
               <ul className="mt-3 space-y-2">
                 <li>
-                  <a href="https://allierbrasil.com.br/agrochemshow/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                  <a href="https://allierbrasil.com.br/agrochemshow/" target="_blank" rel="noopener noreferrer" className="text-base text-muted-foreground hover:text-foreground">
                     allierbrasil.com.br/agrochemshow/ ↗
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:brasil@agrochemshow.com.br" className="hover:text-foreground">
+                  <a href="mailto:brasil@agrochemshow.com.br" className="text-base text-muted-foreground hover:text-foreground">
                     brasil@agrochemshow.com.br
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:allierbrasil@allierbrasil.com.br" className="hover:text-foreground">
+                  <a href="mailto:allierbrasil@allierbrasil.com.br" className="text-base text-muted-foreground hover:text-foreground">
                     allierbrasil@allierbrasil.com.br
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/5511993304717" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                  <a href="https://wa.me/5511993304717" target="_blank" rel="noopener noreferrer" className="text-base text-muted-foreground hover:text-foreground">
                     WhatsApp +55 11 99330-4717
                   </a>
                 </li>
               </ul>
             </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary">17º Brasil AgrochemShow</p>
+              <p className="mt-3 text-base text-muted-foreground">
+                Feira Internacional de Agroquímicos e Bioinsumos
+              </p>
+            </div>
           </div>
-          <p className="mt-10 border-t border-border pt-6 text-xs">© 2026 17º Brasil AgrochemShow</p>
+          <p className="mt-12 border-t border-border pt-6 text-xs text-muted-foreground">© 2026 17º Brasil AgrochemShow</p>
         </div>
       </footer>
     </div>
