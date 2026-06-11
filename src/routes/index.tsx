@@ -425,11 +425,40 @@ function Index() {
       </section>
 
       <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center">
-          <p>© 2026 AgrochemShow · Rua Luís Coelho, 323 — São Paulo, Brasil</p>
-          <a href="https://allierbrasil.com.br/agrochemshow/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-            Site oficial ↗
-          </a>
+        <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-muted-foreground">
+          <div className="grid gap-10 md:grid-cols-2">
+            <div>
+              <p className="text-base font-medium text-foreground">17º Brasil AgrochemShow</p>
+              <p className="mt-2">Rua Luís Coelho, 323 — São Paulo, Brasil</p>
+              <p className="mt-1">3 e 4 de agosto de 2026</p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary">Mais informações</p>
+              <ul className="mt-3 space-y-2">
+                <li>
+                  <a href="https://allierbrasil.com.br/agrochemshow/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                    allierbrasil.com.br/agrochemshow/ ↗
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:brasil@agrochemshow.com.br" className="hover:text-foreground">
+                    brasil@agrochemshow.com.br
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:allierbrasil@allierbrasil.com.br" className="hover:text-foreground">
+                    allierbrasil@allierbrasil.com.br
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/5511993304717" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                    WhatsApp +55 11 99330-4717
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className="mt-10 border-t border-border pt-6 text-xs">© 2026 17º Brasil AgrochemShow</p>
         </div>
       </footer>
     </div>
