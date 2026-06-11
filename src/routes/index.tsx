@@ -171,7 +171,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "17º Brasil AgrochemShow — Feira Internacional de Agroquímicos e Bioinsumos" },
-      { name: "description", content: "3 e 4 de agosto de 2026, São Paulo. +1600 expositores e visitantes de +13 países. Palestras sobre mercado, registro, bioinsumos, China e América Latina." },
+      { name: "description", content: "3 e 4 de agosto de 2026, São Paulo. +1500 expositores e visitantes de +13 países. Palestras sobre mercado, registro, bioinsumos, China e América Latina." },
       { property: "og:title", content: "17º Brasil AgrochemShow" },
       { property: "og:description", content: "Feira Internacional de Agroquímicos e Bioinsumos — São Paulo, 3 e 4 de agosto de 2026." },
     ],
@@ -246,7 +246,7 @@ function Index() {
             { icon: Calendar, label: "Quando", value: "3 e 4 de agosto, 2026" },
             { icon: MapPin, label: "Onde", value: "Centro de Eventos São Luís · São Paulo" },
             { icon: Globe2, label: "Alcance", value: "+13 países representados" },
-            { icon: Users, label: "Público", value: "+1600 expositores e visitantes" },
+            { icon: Users, label: "Público", value: "+1500 expositores e visitantes" },
           ].map(({ icon: Icon, label, value }) => (
             <div key={label} className="bg-background p-8">
               <Icon className="h-5 w-5 text-primary" />
