@@ -303,12 +303,12 @@ function Index() {
               Expo Center Norte, em São Paulo — negócios fechados, palestras lotadas e
               conexões entre empresas de mais de 20 países.
             </p>
-            <a
-              href="#inscricao"
+            <Link
+              to="/inscricao"
               className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
             >
               Participe em 2026 <ArrowRight className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
           <div className="md:col-span-5">
             <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-3xl border border-border bg-background shadow-xl">
