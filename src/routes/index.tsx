@@ -139,7 +139,7 @@ const parceirosMidia = [
   { name: "Portal Agro Chile", src: portalAgroChileLogo, href: "https://www.portalagrochile.cl/" },
   { name: "Publiagro", src: publiagroLogo, href: "https://publiagro.com.bo/" },
   { name: "Safras", src: safrasLogo, href: "https://safras.com.br/" },
-  { name: "Tierra Fértil", src: tierraFertilLogo, href: "https://tierrafertil.com.mx/" },
+  { name: "Tierra Fértil", src: tierraFertilLogo, href: "https://tierrafertil.com.mx/", imgClassName: "max-h-[60%] max-w-[60%]" },
 ];
 
 type Logo = { name: string; src: string; href: string; imgClassName?: string };
