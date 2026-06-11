@@ -171,7 +171,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "17º Brasil AgrochemShow — Feira Internacional de Agroquímicos e Bioinsumos" },
-      { name: "description", content: "3 e 4 de agosto de 2026, São Paulo. +1600 expositores e visitantes de +20 países. Palestras sobre mercado, registro, bioinsumos, China e América Latina." },
+      { name: "description", content: "3 e 4 de agosto de 2026, São Paulo. +1600 expositores e visitantes de +13 países. Palestras sobre mercado, registro, bioinsumos, China e América Latina." },
       { property: "og:title", content: "17º Brasil AgrochemShow" },
       { property: "og:description", content: "Feira Internacional de Agroquímicos e Bioinsumos — São Paulo, 3 e 4 de agosto de 2026." },
     ],
@@ -245,7 +245,7 @@ function Index() {
           {[
             { icon: Calendar, label: "Quando", value: "3 e 4 de agosto, 2026" },
             { icon: MapPin, label: "Onde", value: "Centro de Eventos São Luís · São Paulo" },
-            { icon: Globe2, label: "Alcance", value: "+20 países representados" },
+            { icon: Globe2, label: "Alcance", value: "+13 países representados" },
             { icon: Users, label: "Público", value: "+1600 expositores e visitantes" },
           ].map(({ icon: Icon, label, value }) => (
             <div key={label} className="bg-background p-8">
@@ -274,7 +274,7 @@ function Index() {
             </p>
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {[
-                { title: "Negócios internacionais", text: "Mais de 20 países representados em um ambiente curado para conexões reais." },
+                { title: "Negócios internacionais", text: "Mais de 13 países representados em um ambiente curado para conexões reais." },
                 { title: "Conteúdo técnico", text: "Painéis com líderes de mercado, regulatório, meio ambiente e bioinsumos." },
                 { title: "China & América Latina", text: "Foco especial nos principais polos de produção e demanda do setor." },
                 { title: "Bioinsumos", text: "Espaço dedicado às tecnologias biológicas que redefinem a agricultura." },
@@ -301,7 +301,7 @@ function Index() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Reviva os melhores momentos do 16º Brasil AgrochemShow (2025), realizado no
               Expo Center Norte, em São Paulo — negócios fechados, palestras lotadas e
-              conexões entre empresas de mais de 20 países.
+              conexões entre empresas de mais de 13 países.
             </p>
             <Link
               to="/inscricao"
