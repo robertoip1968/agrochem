@@ -331,7 +331,7 @@ function Index() {
           <p className="text-sm uppercase tracking-widest text-primary">Palestrantes</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
         </div>
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 mx-auto grid max-w-3xl gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {palestrantes.map((p) => (
             <div key={p.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition hover:border-primary/40 hover:shadow-sm">
               <img
@@ -397,7 +397,6 @@ function Index() {
 
           <div className="text-center">
             <p className="text-sm uppercase tracking-widest text-primary">Parceiros de mídia</p>
-            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
             <div className="mt-8 mx-auto max-w-5xl">
               <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
             </div>
