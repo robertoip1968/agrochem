@@ -170,9 +170,9 @@ function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: st
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AgrochemShow 2026 — Feira Internacional de Agroquímicos e Bioinsumos" },
+      { title: "17º Brasil AgrochemShow — Feira Internacional de Agroquímicos e Bioinsumos" },
       { name: "description", content: "3 e 4 de agosto de 2026, São Paulo. +1600 expositores e visitantes de +20 países. Palestras sobre mercado, registro, bioinsumos, China e América Latina." },
-      { property: "og:title", content: "AgrochemShow 2026" },
+      { property: "og:title", content: "17º Brasil AgrochemShow" },
       { property: "og:description", content: "Feira Internacional de Agroquímicos e Bioinsumos — São Paulo, 3 e 4 de agosto de 2026." },
     ],
   }),
@@ -191,13 +191,13 @@ function Index() {
               className="h-[81px] w-auto drop-shadow-[0_1px_6px_rgba(255,255,255,0.5)]"
             />
           </a>
-          <div className="hidden gap-8 text-sm text-white/80 md:flex">
-            <a href="#sobre" className="hover:text-white">Sobre</a>
-            <a href="#destaques" className="hover:text-white">Destaques</a>
-            <a href="#palestras" className="hover:text-white">Palestras</a>
-            <a href="#palestrantes" className="hover:text-white">Palestrantes</a>
-            <a href="#expositores" className="hover:text-white">Expositores</a>
-            <a href="#parceiros" className="hover:text-white">Parceiros</a>
+          <div className="hidden gap-8 text-sm font-semibold tracking-wide text-white md:flex">
+            <a href="#sobre" className="transition hover:text-white/80">Sobre</a>
+            <a href="#destaques" className="transition hover:text-white/80">Destaques</a>
+            <a href="#palestras" className="transition hover:text-white/80">Palestras</a>
+            <a href="#palestrantes" className="transition hover:text-white/80">Palestrantes</a>
+            <a href="#expositores" className="transition hover:text-white/80">Expositores</a>
+            <a href="#parceiros" className="transition hover:text-white/80">Parceiros</a>
           </div>
           <a href="#inscricao" className="rounded-full bg-white px-4 py-2 text-sm font-medium text-foreground transition hover:bg-white/90">
             Pré-inscrição
@@ -219,7 +219,7 @@ function Index() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
         <div className="mx-auto w-full max-w-7xl px-6 pb-20 pt-40">
           <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-white backdrop-blur">
-            Save the date · 17ª edição
+            Save the date · 17º Brasil AgrochemShow
           </p>
           <h1 className="max-w-4xl text-5xl font-light leading-[1.05] tracking-tight text-white md:text-7xl">
             Feira Internacional de Agroquímicos e Bioinsumos
@@ -299,9 +299,9 @@ function Index() {
               Como foi a última edição.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Reviva os melhores momentos da AgrochemShow 2025, realizada no Expo Center
-              Norte, em São Paulo — negócios fechados, palestras lotadas e conexões entre
-              empresas de mais de 20 países.
+              Reviva os melhores momentos do 16º Brasil AgrochemShow (2025), realizado no
+              Expo Center Norte, em São Paulo — negócios fechados, palestras lotadas e
+              conexões entre empresas de mais de 20 países.
             </p>
             <a
               href="#inscricao"
@@ -355,7 +355,7 @@ function Index() {
       <section id="inscricao" className="mx-auto max-w-7xl px-6 py-28">
         <div className="rounded-3xl bg-primary px-8 py-20 text-center text-primary-foreground md:px-16">
           <h2 className="mx-auto max-w-3xl text-4xl font-light leading-tight tracking-tight md:text-5xl">
-            Garanta sua presença na AgrochemShow 2026.
+            Garanta sua presença no 17º Brasil AgrochemShow.
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base text-primary-foreground/80">
             Pré-inscrições abertas. Reserve seu lugar entre os principais players do setor.
@@ -394,7 +394,7 @@ function Index() {
             <p className="text-xs uppercase tracking-widest text-primary">Expositores</p>
             <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem expõe</h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-              Empresas do Brasil, China, Índia e América Latina confirmadas na AgrochemShow 2026.
+              Empresas do Brasil, China, Índia e América Latina confirmadas no 17º Brasil AgrochemShow.
             </p>
             <div className="mt-12 mx-auto grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7">
               {expositores.map((e) => (
@@ -425,11 +425,40 @@ function Index() {
       </section>
 
       <footer className="border-t border-border">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row md:items-center">
-          <p>© 2026 AgrochemShow · Rua Luís Coelho, 323 — São Paulo, Brasil</p>
-          <a href="https://allierbrasil.com.br/agrochemshow/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-            Site oficial ↗
-          </a>
+        <div className="mx-auto max-w-7xl px-6 py-12 text-sm text-muted-foreground">
+          <div className="grid gap-10 md:grid-cols-2">
+            <div>
+              <p className="text-base font-medium text-foreground">17º Brasil AgrochemShow</p>
+              <p className="mt-2">Rua Luís Coelho, 323 — São Paulo, Brasil</p>
+              <p className="mt-1">3 e 4 de agosto de 2026</p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary">Mais informações</p>
+              <ul className="mt-3 space-y-2">
+                <li>
+                  <a href="https://allierbrasil.com.br/agrochemshow/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                    allierbrasil.com.br/agrochemshow/ ↗
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:brasil@agrochemshow.com.br" className="hover:text-foreground">
+                    brasil@agrochemshow.com.br
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:allierbrasil@allierbrasil.com.br" className="hover:text-foreground">
+                    allierbrasil@allierbrasil.com.br
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/5511993304717" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
+                    WhatsApp +55 11 99330-4717
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p className="mt-10 border-t border-border pt-6 text-xs">© 2026 17º Brasil AgrochemShow</p>
         </div>
       </footer>
     </div>
