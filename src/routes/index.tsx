@@ -21,7 +21,7 @@ import krishakLogo from "@/assets/logos/parceiros-midia/krishakjagat.jpg";
 import portalAgroChileLogo from "@/assets/logos/parceiros-midia/portal-agro-chile.jpg";
 import publiagroLogo from "@/assets/logos/parceiros-midia/publiagro.jpg";
 import safrasLogo from "@/assets/logos/parceiros-midia/safras.jpg";
-import tierraFertilLogo from "@/assets/logos/parceiros-midia/tierra-fertil.jpg";
+import tierraFertilLogo from "@/assets/logos/parceiros-midia/tierra-fertil.webp";
 
 import elianaFontes from "@/assets/palestrantes/Eliana-Fontes.png";
 import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
