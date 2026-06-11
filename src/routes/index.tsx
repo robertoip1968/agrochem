@@ -145,7 +145,7 @@ const parceirosMidia = [
 type Logo = { name: string; src: string; href: string };
 function LogoGrid({ items, cols = "md:grid-cols-6" }: { items: Logo[]; cols?: string }) {
   return (
-    <div className={`grid grid-cols-2 gap-4 sm:grid-cols-3 ${cols}`}>
+    <div className={`grid grid-cols-2 items-center gap-4 sm:grid-cols-3 ${cols}`}>
       {items.map((item) => (
         <a
           key={item.name}
@@ -383,7 +383,6 @@ function Index() {
         <div className="mx-auto max-w-7xl space-y-20 px-6 py-24">
           <div className="text-center">
             <p className="text-sm uppercase tracking-widest text-primary">Organizadores</p>
-            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem realiza</h2>
             <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={organizadores} cols="md:grid-cols-2" />
             </div>
@@ -391,15 +390,20 @@ function Index() {
 
           <div className="text-center">
             <p className="text-sm uppercase tracking-widest text-primary">Apoio institucional</p>
-            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Quem apoia</h2>
             <div className="mt-8 mx-auto max-w-2xl">
               <LogoGrid items={apoio} cols="md:grid-cols-2" />
             </div>
           </div>
 
           <div className="text-center">
-            <p className="text-sm uppercase tracking-widest text-primary">Expositores</p>
-            <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem expõe</h2>
+            <p className="text-sm uppercase tracking-widest text-primary">Parceiros de mídia</p>
+            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
+            <div className="mt-8 mx-auto max-w-5xl">
+              <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
+            </div>
+          </div>
+
+          <div className="text-center">
             <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
               Empresas do Brasil, China, Índia e América Latina confirmadas no 17º Brasil AgrochemShow.
             </p>
@@ -418,14 +422,6 @@ function Index() {
                   />
                 </div>
               ))}
-            </div>
-          </div>
-
-          <div className="text-center">
-            <p className="text-sm uppercase tracking-widest text-primary">Parceiros de mídia</p>
-            <h2 className="mt-3 text-3xl font-light tracking-tight md:text-4xl">Cobertura internacional</h2>
-            <div className="mt-8 mx-auto">
-              <LogoGrid items={parceirosMidia} cols="md:grid-cols-4 lg:grid-cols-6" />
             </div>
           </div>
         </div>
