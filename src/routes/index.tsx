@@ -251,7 +251,7 @@ function Index() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-px bg-border md:grid-cols-4">
           {[
             { icon: Calendar, label: "Quando", value: "3 e 4 de agosto, 2026" },
-            { icon: MapPin, label: "Onde", value: "Centro de Eventos São Luís – Rua Luís Coelho, 323, São Paulo.\nPontos de referência: Estação Paulista, 150 m; Estação Consolação, 300 m; Avenida Paulista, 300 m." },
+            { icon: MapPin, label: "Onde", value: <>Centro de Eventos São Luís – Rua Luís Coelho, 323, São Paulo.<br /><span className="font-normal text-muted-foreground">Pontos de referência: Estação Paulista, 150 m; Estação Consolação, 300 m; Avenida Paulista, 300 m.</span></> },
             { icon: Globe2, label: "Alcance", value: "+13 países representados" },
             { icon: Users, label: "Público", value: "+1500 expositores e visitantes do Brasil, China, Índia, Europa e América Latina" },
           ].map(({ icon: Icon, label, value }) => (
