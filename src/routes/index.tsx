@@ -409,10 +409,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="text-center">
-            <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-              Empresas do Brasil, China, Índia e América Latina confirmadas no 17º Brasil AgrochemShow.
-            </p>
+          <div className="text-center border-t border-black">
             <div className="mt-12 mx-auto grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7">
               {expositores.map((e) => (
                 <div
