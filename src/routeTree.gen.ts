@@ -13,6 +13,7 @@ import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as InscricaoRouteImport } from './routes/inscricao'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
+import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
 
 const NoticiasRoute = NoticiasRouteImport.update({
   id: '/noticias',
@@ -34,16 +35,23 @@ const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
   path: '/',
   getParentRoute: () => NoticiasRoute,
 } as any)
+const NoticiasSlugRoute = NoticiasSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => NoticiasRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/inscricao': typeof InscricaoRoute
   '/noticias': typeof NoticiasRouteWithChildren
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/noticias/': typeof NoticiasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/inscricao': typeof InscricaoRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/noticias': typeof NoticiasIndexRoute
 }
 export interface FileRoutesById {
@@ -51,14 +59,21 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/inscricao': typeof InscricaoRoute
   '/noticias': typeof NoticiasRouteWithChildren
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/noticias/': typeof NoticiasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/inscricao' | '/noticias' | '/noticias/'
+  fullPaths: '/' | '/inscricao' | '/noticias' | '/noticias/$slug' | '/noticias/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/inscricao' | '/noticias'
-  id: '__root__' | '/' | '/inscricao' | '/noticias' | '/noticias/'
+  to: '/' | '/inscricao' | '/noticias/$slug' | '/noticias'
+  id:
+    | '__root__'
+    | '/'
+    | '/inscricao'
+    | '/noticias'
+    | '/noticias/$slug'
+    | '/noticias/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -97,14 +112,23 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasIndexRouteImport
       parentRoute: typeof NoticiasRoute
     }
+    '/noticias/$slug': {
+      id: '/noticias/$slug'
+      path: '/$slug'
+      fullPath: '/noticias/$slug'
+      preLoaderRoute: typeof NoticiasSlugRouteImport
+      parentRoute: typeof NoticiasRoute
+    }
   }
 }
 
 interface NoticiasRouteChildren {
+  NoticiasSlugRoute: typeof NoticiasSlugRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
 }
 
 const NoticiasRouteChildren: NoticiasRouteChildren = {
+  NoticiasSlugRoute: NoticiasSlugRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
 }
 
