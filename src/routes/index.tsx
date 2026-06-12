@@ -3,6 +3,11 @@ import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
 import aftermovie from "@/assets/aftermovie-2025.mp4.asset.json";
 import aftermoviePoster from "@/assets/aftermovie-2025-poster.jpg";
+import edicao2025_1 from "@/assets/edicao-2025/edicao-2025-1.jpg.asset.json";
+import edicao2025_2 from "@/assets/edicao-2025/edicao-2025-2.png.asset.json";
+import edicao2025_3 from "@/assets/edicao-2025/edicao-2025-3.png.asset.json";
+import edicao2025_4 from "@/assets/edicao-2025/edicao-2025-4.jpg.asset.json";
+import edicao2025_5 from "@/assets/edicao-2025/edicao-2025-5.jpg.asset.json";
 import logoAgrochemshow from "@/assets/logo-agrochemshow.png";
 import { Calendar, MapPin, Globe2, Users, ArrowRight } from "lucide-react";
 
