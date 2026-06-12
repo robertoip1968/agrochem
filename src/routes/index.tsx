@@ -270,7 +270,7 @@ function Index() {
           <div className="md:col-span-5">
             <p className="text-sm uppercase tracking-widest text-primary">O evento</p>
             <h2 className="mt-4 text-4xl font-light leading-tight tracking-tight md:text-5xl">
-              O ponto de encontro da cadeia global de agroquímicos.
+              O mais importante evento de agroquímicos das Américas.
             </h2>
           </div>
           <div className="md:col-span-7 md:pt-4">
@@ -282,9 +282,9 @@ function Index() {
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {[
                 { title: "Negócios internacionais", text: "Mais de 20 países em um ambiente de networking e conexões comerciais. Desenvolvimento de parcerias, troca de informações e conhecimentos na área regulatória de agroquímicos." },
-                { title: "Conteúdo técnico", text: "Painéis com líderes de mercado, regulatório, meio ambiente e bioinsumos." },
-                { title: "China & América Latina", text: "Foco especial nos principais polos de produção e demanda do setor." },
-                { title: "Bioinsumos", text: "Espaço dedicado às tecnologias biológicas que redefinem a agricultura." },
+                { title: "Conteúdo técnico", text: "Palestras com especialistas em mercado, assuntos regulatórios, meio ambiente, direito, agroquímicos." },
+                { title: "Índia, China & América Latina", text: "Foco nos principais polos de produção e demanda do setor." },
+                { title: "Novas tecnologias", text: "Espaço dedicado às novas tecnologias que definem a agricultura." },
               ].map((item) => (
                 <div key={item.title}>
                   <h3 className="text-base font-medium">{item.title}</h3>
