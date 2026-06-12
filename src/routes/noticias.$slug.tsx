@@ -1,10 +1,10 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import logoAgrochemshow from "@/assets/logo-agrochemshow.png";
-import { noticias } from "@/lib/noticias";
+import { noticias, type Noticia } from "@/lib/noticias";
 
 export const Route = createFileRoute("/noticias/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { noticia: Noticia } => {
     const noticia = noticias.find((n) => n.slug === params.slug);
     if (!noticia) throw notFound();
     return { noticia };
