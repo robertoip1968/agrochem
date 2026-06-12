@@ -69,7 +69,7 @@ function NoticiaPage() {
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">{noticia.subtitle}</p>
 
         <div className="mt-12 space-y-6 text-base leading-relaxed text-foreground">
-          {noticia.paragraphs.map((p, i) => (
+          {noticia.paragraphs.map((p: string, i: number) => (
             <p key={i}>{p}</p>
           ))}
         </div>
