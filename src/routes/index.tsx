@@ -269,6 +269,20 @@ function Index() {
         </div>
       </section>
 
+      {/* Fotos da última edição */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <p className="text-sm uppercase tracking-widest text-primary">Fotos da última edição</p>
+          <div className="mt-8 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
+            <img src={edicao2025_1.url} alt="Credenciamento do Brasil AgrochemShow 2025" className="aspect-[4/3] h-full w-full object-cover md:col-span-2 md:row-span-2 md:aspect-auto" loading="lazy" />
+            <img src={edicao2025_2.url} alt="Networking entre participantes" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+            <img src={edicao2025_3.url} alt="Estandes de expositores" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+            <img src={edicao2025_4.url} alt="Plateia acompanhando palestra" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+            <img src={edicao2025_5.url} alt="Corredor de expositores" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
       {/* About */}
       <section id="destaques" className="mx-auto max-w-7xl px-6 py-28">
         <div className="grid gap-16 md:grid-cols-12">
