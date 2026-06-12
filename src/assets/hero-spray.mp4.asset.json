@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "asset_id": "3725ba80-e0c8-499b-9a39-be54bd73dc7c",
+  "asset_id": "bba264a5-6739-4d6e-a084-4b8398a88787",
   "project_id": "ebbaec03-f61a-4722-9ecb-43bb36e24881",
-  "url": "/__l5e/assets-v1/3725ba80-e0c8-499b-9a39-be54bd73dc7c/hero-spray.mp4",
-  "r2_key": "a/v1/ebbaec03-f61a-4722-9ecb-43bb36e24881/3725ba80-e0c8-499b-9a39-be54bd73dc7c/hero-spray.mp4",
-  "original_filename": "hero-spray.mp4",
-  "size": 51377700,
+  "url": "/__l5e/assets-v1/bba264a5-6739-4d6e-a084-4b8398a88787/hero-video.mp4",
+  "r2_key": "a/v1/ebbaec03-f61a-4722-9ecb-43bb36e24881/bba264a5-6739-4d6e-a084-4b8398a88787/hero-video.mp4",
+  "original_filename": "hero-video.mp4",
+  "size": 64647637,
   "content_type": "video/mp4",
-  "created_at": "2026-06-11T18:47:13Z"
+  "created_at": "2026-06-12T12:06:54Z"
 }
