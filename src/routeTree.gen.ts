@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as InscricaoRouteImport } from './routes/inscricao'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
 
 const NoticiasRoute = NoticiasRouteImport.update({
   id: '/noticias',
@@ -28,35 +29,42 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => NoticiasRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/inscricao': typeof InscricaoRoute
-  '/noticias': typeof NoticiasRoute
+  '/noticias': typeof NoticiasRouteWithChildren
+  '/noticias/': typeof NoticiasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/inscricao': typeof InscricaoRoute
-  '/noticias': typeof NoticiasRoute
+  '/noticias': typeof NoticiasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/inscricao': typeof InscricaoRoute
-  '/noticias': typeof NoticiasRoute
+  '/noticias': typeof NoticiasRouteWithChildren
+  '/noticias/': typeof NoticiasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/inscricao' | '/noticias'
+  fullPaths: '/' | '/inscricao' | '/noticias' | '/noticias/'
   fileRoutesByTo: FileRoutesByTo
   to: '/' | '/inscricao' | '/noticias'
-  id: '__root__' | '/' | '/inscricao' | '/noticias'
+  id: '__root__' | '/' | '/inscricao' | '/noticias' | '/noticias/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   InscricaoRoute: typeof InscricaoRoute
-  NoticiasRoute: typeof NoticiasRoute
+  NoticiasRoute: typeof NoticiasRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -82,13 +90,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/noticias/': {
+      id: '/noticias/'
+      path: '/'
+      fullPath: '/noticias/'
+      preLoaderRoute: typeof NoticiasIndexRouteImport
+      parentRoute: typeof NoticiasRoute
+    }
   }
 }
+
+interface NoticiasRouteChildren {
+  NoticiasIndexRoute: typeof NoticiasIndexRoute
+}
+
+const NoticiasRouteChildren: NoticiasRouteChildren = {
+  NoticiasIndexRoute: NoticiasIndexRoute,
+}
+
+const NoticiasRouteWithChildren = NoticiasRoute._addFileChildren(
+  NoticiasRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   InscricaoRoute: InscricaoRoute,
-  NoticiasRoute: NoticiasRoute,
+  NoticiasRoute: NoticiasRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
