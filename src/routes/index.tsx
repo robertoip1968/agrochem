@@ -281,7 +281,7 @@ function Index() {
             </p>
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {[
-                { title: "Negócios internacionais", text: "Mais de 20 países representados em um ambiente curado para conexões reais." },
+                { title: "Negócios internacionais", text: "Mais de 20 países em um ambiente de networking e conexões comerciais. Desenvolvimento de parcerias, troca de informações e conhecimentos na área regulatória de agroquímicos." },
                 { title: "Conteúdo técnico", text: "Painéis com líderes de mercado, regulatório, meio ambiente e bioinsumos." },
                 { title: "China & América Latina", text: "Foco especial nos principais polos de produção e demanda do setor." },
                 { title: "Bioinsumos", text: "Espaço dedicado às tecnologias biológicas que redefinem a agricultura." },
