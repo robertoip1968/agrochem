@@ -101,6 +101,12 @@ const palestrantes = [
     bio: "Sócio da AllierBrasil e fundador do look2agro™, engenheiro agrônomo pela Esalq/USP, MBA, e especialista em registro de agrotóxicos. A AllierBrasil é uma consultoria na área de registro de produtos. Há mais de 20 anos promove o agro brasileiro no Brasil e no exterior.",
   },
   {
+    name: "Luciana Fabri Mazza",
+    photo: lucianaMazza,
+    theme: "Aspectos importantes na judicialização de processos de registro de pesticidas",
+    bio: "Sócia do escritório Mazza e Manente de Almeida Advogados. Advogada formada pela Universidade Presbiteriana Mackenzie, pós-graduada em Direito Tributário e Processo Tributário pelo Instituto Brasileiro de Estudos Tributários. Atua nas áreas de Direito Público e Empresarial, com foco em contencioso e consultoria jurídica.",
+  },
+  {
     name: "Eliana Maria Gouveia Fontes",
     photo: elianaFontes,
     theme: "Agricultura Regenerativa e Sustentabilidade",
@@ -111,12 +117,6 @@ const palestrantes = [
     photo: marceloFerreira,
     theme: "Desafios da Aplicação de Fitossanitários em Cenários de Demanda Alimentar e de Exigência Ambiental Crescente",
     bio: "Engenheiro agrônomo pela Unesp de Jaboticabal, onde obteve títulos de mestre, doutor, livre-docente e professor titular. Realizou estágios pós-doutorais no Reino Unido e foi professor visitante sênior na Universidade de Lisboa. Chefe do Departamento de Fitossanidade da Unesp de Jaboticabal, coordenador do Núcleo de Estudos e Desenvolvimento da Tecnologia de Aplicação.",
-  },
-  {
-    name: "Luciana Fabri Mazza",
-    photo: lucianaMazza,
-    theme: "Aspectos importantes na judicialização de processos de registro de pesticidas",
-    bio: "Sócia do escritório Mazza e Manente de Almeida Advogados. Advogada formada pela Universidade Presbiteriana Mackenzie, pós-graduada em Direito Tributário e Processo Tributário pelo Instituto Brasileiro de Estudos Tributários. Atua nas áreas de Direito Público e Empresarial, com foco em contencioso e consultoria jurídica.",
   },
   {
     name: "Zhang Jinlong",
@@ -338,7 +338,7 @@ function Index() {
           <p className="text-sm uppercase tracking-widest text-primary">Palestrantes</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
         </div>
-        <div className="mt-16 grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-16 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {palestrantes.map((p) => (
             <div key={p.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition hover:border-primary/40 hover:shadow-sm">
               <img
