@@ -3,6 +3,11 @@ import heroSpray from "@/assets/hero-spray.mp4.asset.json";
 import heroFields from "@/assets/hero-fields.jpg";
 import aftermovie from "@/assets/aftermovie-2025.mp4.asset.json";
 import aftermoviePoster from "@/assets/aftermovie-2025-poster.jpg";
+import edicao2025_1 from "@/assets/edicao-2025/edicao-2025-1.jpg.asset.json";
+import edicao2025_2 from "@/assets/edicao-2025/edicao-2025-2.png.asset.json";
+import edicao2025_3 from "@/assets/edicao-2025/edicao-2025-3.png.asset.json";
+import edicao2025_4 from "@/assets/edicao-2025/edicao-2025-4.jpg.asset.json";
+import edicao2025_5 from "@/assets/edicao-2025/edicao-2025-5.jpg.asset.json";
 import logoAgrochemshow from "@/assets/logo-agrochemshow.png";
 import { Calendar, MapPin, Globe2, Users, ArrowRight } from "lucide-react";
 
@@ -261,6 +266,20 @@ function Index() {
               <p className="mt-2 text-base font-medium text-foreground">{value}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Fotos da última edição */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <p className="text-sm uppercase tracking-widest text-primary">Fotos da última edição</p>
+          <div className="mt-8 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-3">
+            <img src={edicao2025_1.url} alt="Credenciamento do Brasil AgrochemShow 2025" className="aspect-[4/3] h-full w-full object-cover md:col-span-2 md:row-span-2 md:aspect-auto" loading="lazy" />
+            <img src={edicao2025_2.url} alt="Networking entre participantes" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+            <img src={edicao2025_3.url} alt="Estandes de expositores" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+            <img src={edicao2025_4.url} alt="Plateia acompanhando palestra" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+            <img src={edicao2025_5.url} alt="Corredor de expositores" className="aspect-[4/3] h-full w-full object-cover" loading="lazy" />
+          </div>
         </div>
       </section>
 
