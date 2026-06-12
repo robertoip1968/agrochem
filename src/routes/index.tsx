@@ -275,9 +275,9 @@ function Index() {
           </div>
           <div className="md:col-span-7 md:pt-4">
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Em sua 17ª edição, a AgrochemShow reúne fabricantes, distribuidores, reguladores
-              e especialistas do Brasil, China, Índia, Europa e América Latina. Dois dias de
-              negócios, networking qualificado e conteúdo técnico de alto nível em um único lugar.
+              Em sua 17ª edição, o Brasil AgrochemShow reúne fabricantes, distribuidores, reguladores
+              e especialistas do Brasil, China, Índia, Europa e América Latina. Serão dois dias de
+              negócios com o objetivo de promover o agro e desenvolver parcerias técnico-comerciais.
             </p>
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {[
