@@ -281,7 +281,7 @@ function Index() {
             </p>
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {[
-                { title: "Negócios internacionais", text: "Mais de 13 países representados em um ambiente curado para conexões reais." },
+                { title: "Negócios internacionais", text: "Mais de 20 países representados em um ambiente curado para conexões reais." },
                 { title: "Conteúdo técnico", text: "Painéis com líderes de mercado, regulatório, meio ambiente e bioinsumos." },
                 { title: "China & América Latina", text: "Foco especial nos principais polos de produção e demanda do setor." },
                 { title: "Bioinsumos", text: "Espaço dedicado às tecnologias biológicas que redefinem a agricultura." },
@@ -308,7 +308,7 @@ function Index() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Reviva os melhores momentos do 16º Brasil AgrochemShow (2025) —
               negócios fechados, palestras lotadas, conexões entre empresas de mais
-              de 13 países e doação de 14 mil kg de alimentos doados para a ONG CrêSer.
+              de 20 países e doação de 14 mil kg de alimentos doados para a ONG CrêSer.
             </p>
             <Link
               to="/inscricao"
