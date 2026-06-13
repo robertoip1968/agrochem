@@ -289,7 +289,7 @@ function Index() {
           <div className="md:col-span-5">
             <p className="text-sm uppercase tracking-widest text-primary">O evento</p>
             <h2 className="mt-4 text-4xl font-light leading-tight tracking-tight md:text-5xl">
-              O mais importante evento de agroquímicos das Américas.
+              O mais importante evento internacional de agroquímicos das Américas.
             </h2>
           </div>
           <div className="md:col-span-7 md:pt-4">
