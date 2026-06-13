@@ -327,7 +327,7 @@ function Index() {
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Reviva os melhores momentos do 16º Brasil AgrochemShow (2025) —
               palestras lotadas, conexões entre empresas de mais
-              de 13 países. Contribuição e doação de 14 mil kg de alimentos para a ONG CrêSer, totalizando valor equivalente a R$ 250 mil.
+              de 13 países, 1.000 participantes.
             </p>
             <Link
               to="/inscricao"
