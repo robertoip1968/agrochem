@@ -33,6 +33,10 @@ import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
 import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
 import flavioHirata from "@/assets/palestrantes/flavio-hirata.png";
 import zhangJinlong from "@/assets/palestrantes/zhang-jinlong.jpeg";
+import adrianaTorresAsset from "@/assets/palestrantes/adriana-torres.jpg.asset.json";
+import terryChowAsset from "@/assets/palestrantes/terry-chow.jpg.asset.json";
+import diogoZoltayAsset from "@/assets/palestrantes/diogo-zoltay.jpg.asset.json";
+import joseFranciscoAsset from "@/assets/palestrantes/jose-francisco.jpg.asset.json";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
   eager: true,
@@ -128,6 +132,12 @@ const palestrantes = [
     photo: zhangJinlong,
     theme: "Desafios na cadeia de suprimentos da China",
     bio: "Pesquisador independente com mais de 20 anos de experiência na indústria de agroquímicos da China e mais de 15 anos de atuação em registro e vendas para o Brasil. Especialista em desenvolvimento de produtos, registro e gestão de Planejamento de Vendas e Operações (S&OP).",
+  },
+  {
+    name: "Adriana Torres de Souza",
+    photo: adrianaTorresAsset.url,
+    theme: "Avaliação de Risco de Agrotóxicos",
+    bio: "Gerente de monitoramento e avaliação do risco da Gerência-Geral de Toxicologia da Anvisa. Responsável por atividades de avaliação do risco não dietético e dietético, incluindo o estabelecimento de LMR de agrotóxicos em alimentos. Gerencia reavaliações toxicológicas, atividades do Programa de Análise de Resíduos de Agrotóxicos em Alimentos e petições de pós-registro. Graduada em Química, mestre em Química Inorgânica pela Universidade de Brasília, especialista em Toxicologia Aplicada à Vigilância Sanitária pela Universidade Estadual de Londrina.",
   },
 ];
 
@@ -376,12 +386,38 @@ function Index() {
         </div>
 
         {/* Bate-Papo */}
-        <div className="mt-20 text-center">
+        <div className="mt-24 text-center">
           <p className="text-sm uppercase tracking-widest text-primary">Bate-Papo</p>
-          <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Em breve</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Novas conversas e interações serão anunciadas em breve.
-          </p>
+          <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Conversas no palco</h2>
+        </div>
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
+            <p className="text-sm font-medium uppercase tracking-widest text-primary">Bate-papo</p>
+            <h3 className="mt-3 text-xl font-medium">Além da Conformidade: Potencializando Estratégias Regulatórias e Estudos BPL para Biológicos e Agroquímicos</h3>
+            <p className="mt-2 text-sm text-muted-foreground">3 de agosto, 14:00</p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              <div className="flex flex-col items-center text-center">
+                <img src={terryChowAsset.url} alt="Terry Chow" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <h4 className="mt-3 text-base font-medium">Terry Chow</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Diretor comercial na ALS (Hangzhou/China), formado em biologia marinha e oceanografia pela Ocean University of China.</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <img src={diogoZoltayAsset.url} alt="Diogo Zoltay" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <h4 className="mt-3 text-base font-medium">Diogo Zoltay</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Gerente do Laboratório de Toxicologia e Ecotoxicologia na ALS Laboratórios (Charqueada/SP), graduado em medicina veterinária pela UPIS.</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
+            <p className="text-sm font-medium uppercase tracking-widest text-primary">Bate-papo</p>
+            <h3 className="mt-3 text-xl font-medium">Atuação da Coplacana e Demandas e Desafios na Área de Insumos Agrícolas</h3>
+            <p className="mt-2 text-sm text-muted-foreground">3 de agosto, 16:00</p>
+            <div className="mt-6 flex flex-col items-center text-center">
+              <img src={joseFranciscoAsset.url} alt="José Francisco de Paula Neto" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+              <h4 className="mt-3 text-base font-medium">José Francisco de Paula Neto</h4>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Superintendente de negócios da Coplacana, responsável pela operação comercial das Unidades de Negócios da cooperativa, incluindo defensivos, fertilizantes, máquinas, equipamentos, varejo e insumos em geral. Engenheiro agrônomo pela Unesp de Jaboticabal, com MBA em Marketing pela FUNDACE/FEA-USP de Ribeirão Preto/SP.</p>
+            </div>
+          </div>
         </div>
       </section>
 
