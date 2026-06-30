@@ -408,7 +408,7 @@ function Index() {
             </div>
           </div>
           <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
-            <h3 className="text-xl font-medium">Atuação da Coplacana e Demandas e Desafios na Área de Insumos Agrícolas</h3>
+            <h3 className="text-center text-xl font-medium">Atuação da Coplacana e Demandas e Desafios na Área de Insumos Agrícolas</h3>
             <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 16:00</p>
             <div className="mt-6 flex flex-col items-center text-center">
               <img src={joseFranciscoAsset.url} alt="José Francisco de Paula Neto" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
