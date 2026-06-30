@@ -34,10 +34,10 @@ import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
 import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
 import flavioHirata from "@/assets/palestrantes/flavio-hirata.png";
 import zhangJinlong from "@/assets/palestrantes/zhang-jinlong.jpeg";
-import adrianaTorresAsset from "@/assets/palestrantes/adriana-torres.png.asset.json";
-import terryChowAsset from "@/assets/palestrantes/terry-chow.jpg.asset.json";
-import diogoZoltayAsset from "@/assets/palestrantes/diogo-zoltay.jpg.asset.json";
-import joseFranciscoAsset from "@/assets/palestrantes/jose-francisco.jpg.asset.json";
+import adrianaTorres from "@/assets/palestrantes/adriana-torres.png";
+import terryChow from "@/assets/palestrantes/terry-chow.jpg";
+import diogoZoltay from "@/assets/palestrantes/diogo-zoltay.jpg";
+import joseFrancisco from "@/assets/palestrantes/jose-francisco.jpg";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
   eager: true,
@@ -106,7 +106,7 @@ const expositores = Object.entries(expositorFiles)
 const palestrantes = [
   {
     name: "Adriana Torres de Souza",
-    photo: adrianaTorresAsset.url,
+    photo: adrianaTorres,
     theme: "Avaliação de Risco de Agrotóxicos",
     bio: "Gerente de monitoramento e avaliação do risco da Gerência-Geral de Toxicologia da Anvisa. Responsável por atividades de avaliação do risco não dietético e dietético, incluindo o estabelecimento de LMR de agrotóxicos em alimentos. Gerencia reavaliações toxicológicas, atividades do Programa de Análise de Resíduos de Agrotóxicos em Alimentos e petições de pós-registro. Graduada em Química, mestre em Química Inorgânica pela Universidade de Brasília, especialista em Toxicologia Aplicada à Vigilância Sanitária pela Universidade Estadual de Londrina.",
   },
@@ -398,12 +398,12 @@ function Index() {
             <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 14:00</p>
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
               <div className="flex flex-col items-center text-center">
-                <img src={terryChowAsset.url} alt="Terry Chow" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <img src={terryChow} alt="Terry Chow" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
                 <h4 className="mt-3 text-base font-medium">Terry Chow</h4>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Diretor comercial na ALS (Hangzhou/China), formado em biologia marinha e oceanografia pela Ocean University of China.</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <img src={diogoZoltayAsset.url} alt="Diogo Zoltay" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <img src={diogoZoltay} alt="Diogo Zoltay" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
                 <h4 className="mt-3 text-base font-medium">Diogo Zoltay</h4>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Gerente do Laboratório de Toxicologia e Ecotoxicologia na ALS Laboratórios (Charqueada/SP), graduado em medicina veterinária pela UPIS.</p>
               </div>
@@ -413,7 +413,7 @@ function Index() {
             <h3 className="text-center text-xl font-medium">Atuação da Coplacana e Demandas e Desafios na Área de Insumos Agrícolas</h3>
             <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 16:00</p>
             <div className="mt-6 flex flex-col items-center text-center">
-              <img src={joseFranciscoAsset.url} alt="José Francisco de Paula Neto" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+              <img src={joseFrancisco} alt="José Francisco de Paula Neto" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
               <h4 className="mt-3 text-base font-medium">José Francisco de Paula Neto</h4>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Superintendente de negócios da Coplacana, responsável pela operação comercial das Unidades de Negócios da cooperativa, incluindo defensivos, fertilizantes, máquinas, equipamentos, varejo e insumos em geral. Engenheiro agrônomo pela Unesp de Jaboticabal, com MBA em Marketing pela FUNDACE/FEA-USP de Ribeirão Preto/SP.</p>
             </div>

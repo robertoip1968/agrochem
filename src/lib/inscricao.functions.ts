@@ -106,7 +106,14 @@ export const enviarInscricao = createServerFn({ method: "POST" })
       host: SMTP_HOST,
       port: Number(SMTP_PORT),
       secure: String(SMTP_SECURE).toLowerCase() === "true",
+      family: 4,
       auth: { user: SMTP_USER, pass: SMTP_PASS },
+      tls: {
+        servername: SMTP_HOST,
+      },
+      connectionTimeout: 30000,
+      greetingTimeout: 30000,
+      socketTimeout: 60000,
     });
 
     const organizerHtml = buildOrganizerHtml(data);
