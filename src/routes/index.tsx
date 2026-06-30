@@ -104,6 +104,12 @@ const expositores = Object.entries(expositorFiles)
 
 const palestrantes = [
   {
+    name: "Adriana Torres de Souza",
+    photo: adrianaTorresAsset.url,
+    theme: "Avaliação de Risco de Agrotóxicos",
+    bio: "Gerente de monitoramento e avaliação do risco da Gerência-Geral de Toxicologia da Anvisa. Responsável por atividades de avaliação do risco não dietético e dietético, incluindo o estabelecimento de LMR de agrotóxicos em alimentos. Gerencia reavaliações toxicológicas, atividades do Programa de Análise de Resíduos de Agrotóxicos em Alimentos e petições de pós-registro. Graduada em Química, mestre em Química Inorgânica pela Universidade de Brasília, especialista em Toxicologia Aplicada à Vigilância Sanitária pela Universidade Estadual de Londrina.",
+  },
+  {
     name: "Flavio Hirata",
     photo: flavioHirata,
     theme: "Registro de agrotóxicos",
@@ -132,12 +138,6 @@ const palestrantes = [
     photo: zhangJinlong,
     theme: "Desafios na cadeia de suprimentos da China",
     bio: "Pesquisador independente com mais de 20 anos de experiência na indústria de agroquímicos da China e mais de 15 anos de atuação em registro e vendas para o Brasil. Especialista em desenvolvimento de produtos, registro e gestão de Planejamento de Vendas e Operações (S&OP).",
-  },
-  {
-    name: "Adriana Torres de Souza",
-    photo: adrianaTorresAsset.url,
-    theme: "Avaliação de Risco de Agrotóxicos",
-    bio: "Gerente de monitoramento e avaliação do risco da Gerência-Geral de Toxicologia da Anvisa. Responsável por atividades de avaliação do risco não dietético e dietético, incluindo o estabelecimento de LMR de agrotóxicos em alimentos. Gerencia reavaliações toxicológicas, atividades do Programa de Análise de Resíduos de Agrotóxicos em Alimentos e petições de pós-registro. Graduada em Química, mestre em Química Inorgânica pela Universidade de Brasília, especialista em Toxicologia Aplicada à Vigilância Sanitária pela Universidade Estadual de Londrina.",
   },
 ];
 
