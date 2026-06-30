@@ -33,7 +33,7 @@ import marceloFerreira from "@/assets/palestrantes/Marcelo-Ferreira.png";
 import lucianaMazza from "@/assets/palestrantes/luciana-mazza.png";
 import flavioHirata from "@/assets/palestrantes/flavio-hirata.png";
 import zhangJinlong from "@/assets/palestrantes/zhang-jinlong.jpeg";
-import adrianaTorresAsset from "@/assets/palestrantes/adriana-torres.jpg.asset.json";
+import adrianaTorresAsset from "@/assets/palestrantes/adriana-torres.png.asset.json";
 import terryChowAsset from "@/assets/palestrantes/terry-chow.jpg.asset.json";
 import diogoZoltayAsset from "@/assets/palestrantes/diogo-zoltay.jpg.asset.json";
 import joseFranciscoAsset from "@/assets/palestrantes/jose-francisco.jpg.asset.json";
