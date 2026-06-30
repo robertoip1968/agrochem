@@ -367,7 +367,7 @@ function Index() {
           <p className="text-sm uppercase tracking-widest text-primary">Palestrantes</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Quem sobe ao palco</h2>
         </div>
-        <div className="mt-16 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {palestrantes.map((p) => (
             <div key={p.name} className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition hover:border-primary/40 hover:shadow-sm">
               <img
