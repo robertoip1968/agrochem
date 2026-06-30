@@ -392,8 +392,7 @@ function Index() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
-            <p className="text-sm font-medium uppercase tracking-widest text-primary">Bate-papo</p>
-            <h3 className="mt-3 text-xl font-medium">Além da Conformidade: Potencializando Estratégias Regulatórias e Estudos BPL para Biológicos e Agroquímicos</h3>
+            <h3 className="text-xl font-medium">Além da Conformidade: Potencializando Estratégias Regulatórias e Estudos BPL para Biológicos e Agroquímicos</h3>
             <p className="mt-2 text-sm text-muted-foreground">3 de agosto, 14:00</p>
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
               <div className="flex flex-col items-center text-center">
@@ -409,8 +408,7 @@ function Index() {
             </div>
           </div>
           <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
-            <p className="text-sm font-medium uppercase tracking-widest text-primary">Bate-papo</p>
-            <h3 className="mt-3 text-xl font-medium">Atuação da Coplacana e Demandas e Desafios na Área de Insumos Agrícolas</h3>
+            <h3 className="text-xl font-medium">Atuação da Coplacana e Demandas e Desafios na Área de Insumos Agrícolas</h3>
             <p className="mt-2 text-sm text-muted-foreground">3 de agosto, 16:00</p>
             <div className="mt-6 flex flex-col items-center text-center">
               <img src={joseFranciscoAsset.url} alt="José Francisco de Paula Neto" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
