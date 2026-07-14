@@ -37,6 +37,7 @@ import zhangJinlong from "@/assets/palestrantes/zhang-jinlong.jpeg";
 import adrianaTorres from "@/assets/palestrantes/adriana-torres.png";
 import terryChow from "@/assets/palestrantes/terry-chow.jpg";
 import diogoZoltay from "@/assets/palestrantes/diogo-zoltay.jpg";
+import sergioGraff from "@/assets/palestrantes/sergio-graff.jpg";
 import joseFrancisco from "@/assets/palestrantes/jose-francisco.jpg";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
@@ -258,6 +259,17 @@ function Index() {
             <a href="#sobre" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-base font-medium text-white transition hover:bg-white/10">
               Conheça o evento
             </a>
+          </div>
+        </div>
+        <div className="mt-8 grid gap-8 md:grid-cols-2">
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
+            <h3 className="text-center text-xl font-medium">DAROC: O que Mudou na Avaliação de Risco dos Agroquímicos</h3>
+            <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 17:00</p>
+            <div className="mt-6 flex flex-col items-center text-center">
+              <img src={sergioGraff} alt="Dr. Sergio Graff" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+              <h4 className="mt-3 text-base font-medium">Dr. Sergio Graff</h4>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Diretor médico da Toxiclin, médico, especialista em Toxicologia Médica pela AMB, mestre em Toxicologia pela USP, ex-presidente da Sociedade Brasileira de Toxicologia, presidente do Capítulo de Toxicologia Médica da Sociedade Brasileira de Clínica Médica.</p>
+            </div>
           </div>
         </div>
       </section>
