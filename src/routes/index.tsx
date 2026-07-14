@@ -38,6 +38,9 @@ import adrianaTorres from "@/assets/palestrantes/adriana-torres.png";
 import terryChow from "@/assets/palestrantes/terry-chow.jpg";
 import diogoZoltay from "@/assets/palestrantes/diogo-zoltay.jpg";
 import joseFrancisco from "@/assets/palestrantes/jose-francisco.jpg";
+import alexandreSantos from "@/assets/palestrantes/alexandre-santos.jpg";
+import lucianaMecatti from "@/assets/palestrantes/luciana-mecatti.jpg";
+import sergioGraff from "@/assets/palestrantes/sergio-graff.jpg";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
   eager: true,
