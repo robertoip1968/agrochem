@@ -395,7 +395,7 @@ function Index() {
           <p className="text-sm uppercase tracking-widest text-primary">Bate-Papo</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Conversas no palco</h2>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
           <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
             <h3 className="text-center text-xl font-medium">Além da Conformidade: Potencializando Estratégias Regulatórias e Estudos BPL para Biológicos e Agroquímicos</h3>
             <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 14:00</p>
