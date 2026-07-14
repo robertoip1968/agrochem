@@ -38,6 +38,7 @@ import adrianaTorres from "@/assets/palestrantes/adriana-torres.png";
 import terryChow from "@/assets/palestrantes/terry-chow.jpg";
 import diogoZoltay from "@/assets/palestrantes/diogo-zoltay.jpg";
 import joseFrancisco from "@/assets/palestrantes/jose-francisco.jpg";
+import sergioGraff from "@/assets/sergio-graff.png.asset.json";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
   eager: true,
@@ -392,7 +393,7 @@ function Index() {
           <p className="text-sm uppercase tracking-widest text-primary">Bate-Papo</p>
           <h2 className="mt-4 text-4xl font-light tracking-tight md:text-5xl">Conversas no palco</h2>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
             <h3 className="text-center text-xl font-medium">Além da Conformidade: Potencializando Estratégias Regulatórias e Estudos BPL para Biológicos e Agroquímicos</h3>
             <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 14:00</p>
@@ -416,6 +417,15 @@ function Index() {
               <img src={joseFrancisco} alt="José Francisco de Paula Neto" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
               <h4 className="mt-3 text-base font-medium">José Francisco de Paula Neto</h4>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Superintendente de negócios da Coplacana, responsável pela operação comercial das Unidades de Negócios da cooperativa, incluindo defensivos, fertilizantes, máquinas, equipamentos, varejo e insumos em geral. Engenheiro agrônomo pela Unesp de Jaboticabal, com MBA em Marketing pela FUNDACE/FEA-USP de Ribeirão Preto/SP.</p>
+            </div>
+          </div>
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
+            <h3 className="text-center text-xl font-medium">DAROC: O que Mudou na Avaliação de Risco dos Agroquímicos</h3>
+            <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 17:00</p>
+            <div className="mt-6 flex flex-col items-center text-center">
+              <img src={sergioGraff.url} alt="Dr. Sergio Graff" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+              <h4 className="mt-3 text-base font-medium">Dr. Sergio Graff</h4>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Diretor médico da Toxiclin, médico, especialista em Toxicologia Médica pela AMB, mestre em Toxicologia pela USP, ex-presidente da Sociedade Brasileira de Toxicologia, presidente do Capítulo de Toxicologia Médica da Sociedade Brasileira de Clínica Médica.</p>
             </div>
           </div>
         </div>
