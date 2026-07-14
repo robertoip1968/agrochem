@@ -102,7 +102,7 @@ export const enviarInscricao = createServerFn({ method: "POST" })
     }
 
     const nodemailer = await import("nodemailer");
-    const transporter = nodemailer.createTransport({
+    const transporter = (nodemailer.default ?? nodemailer).createTransport({
       host: SMTP_HOST,
       port: Number(SMTP_PORT),
       secure: String(SMTP_SECURE).toLowerCase() === "true",
