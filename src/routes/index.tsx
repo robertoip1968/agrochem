@@ -327,6 +327,31 @@ function Index() {
               ))}
             </div>
           </div>
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
+            <h3 className="text-center text-xl font-medium">DAROC: O que Mudou na Avaliação de Risco dos Agroquímicos</h3>
+            <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 17:00</p>
+            <div className="mt-6 flex flex-col items-center text-center">
+              <img src={sergioGraff} alt="Dr. Sergio Graff" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+              <h4 className="mt-3 text-base font-medium">Dr. Sergio Graff</h4>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Diretor médico da Toxiclin, médico, especialista em Toxicologia Médica pela AMB, mestre em Toxicologia pela USP, ex-presidente da Sociedade Brasileira de Toxicologia, presidente do Capítulo de Toxicologia Médica da Sociedade Brasileira de Clínica Médica.</p>
+            </div>
+          </div>
+          <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-background p-8 transition hover:border-primary/40 hover:shadow-sm">
+            <h3 className="text-center text-xl font-medium">Excelência em Estudos de RT25: A Abordagem da Plantec na Avaliação de Risco para Abelhas</h3>
+            <p className="mt-2 text-center text-sm text-muted-foreground">4 de agosto, 14:00</p>
+            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+              <div className="flex flex-col items-center text-center">
+                <img src={alexandreSantos} alt="Alexandre Jorge Tavares dos Santos" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <h4 className="mt-3 text-base font-medium">Alexandre Jorge Tavares dos Santos</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Engenheiro agrônomo, diretor geral da Plantec Laboratórios.</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <img src={lucianaMecatti} alt="Luciana Mecatti Elias" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <h4 className="mt-3 text-base font-medium">Luciana Mecatti Elias</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Bióloga, doutora em Microbiologia Agrícola, gerente de laboratório.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
