@@ -41,6 +41,7 @@ import joseFrancisco from "@/assets/palestrantes/jose-francisco.jpg";
 import sergioGraff from "@/assets/sergio-graff.png.asset.json";
 import alexandreTavares from "@/assets/alexandre-tavares.png.asset.json";
 import lucianaMecatti from "@/assets/luciana-mecatti.png.asset.json";
+import guilhermeSanches from "@/assets/palestrantes/guilherme-sanches.jpg";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
   eager: true,
