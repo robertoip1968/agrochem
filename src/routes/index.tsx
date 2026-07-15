@@ -144,6 +144,12 @@ const palestrantes = [
     theme: "Desafios na cadeia de suprimentos da China",
     bio: "Pesquisador independente com mais de 20 anos de experiência na indústria de agroquímicos da China e mais de 15 anos de atuação em registro e vendas para o Brasil. Especialista em desenvolvimento de produtos, registro e gestão de Planejamento de Vendas e Operações (S&OP).",
   },
+  {
+    name: "Guilherme Sanches",
+    photo: guilhermeSanches,
+    theme: "Inteligência Artificial na Agricultura",
+    bio: "Engenheiro Agrícola pela Unicamp, com mestrado, doutorado e pós-doutorado pelas principais universidades paulistas (USP/Unicamp/Unesp) e especialização em Inteligência Artificial e Big Data pelo ICMC/USP. Idealizador do projeto OagronomIA (O agro no Mundo da IA), que tem o objetivo de capacitar profissionais do agro na era da Inteligência Artificial.",
+  },
 ];
 
 const organizadores = [
