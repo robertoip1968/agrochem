@@ -38,9 +38,9 @@ import adrianaTorres from "@/assets/palestrantes/adriana-torres.png";
 import terryChow from "@/assets/palestrantes/terry-chow.jpg";
 import diogoZoltay from "@/assets/palestrantes/diogo-zoltay.jpg";
 import joseFrancisco from "@/assets/palestrantes/jose-francisco.jpg";
-import sergioGraff from "@/assets/sergio-graff.png.asset.json";
-import alexandreTavares from "@/assets/alexandre-tavares.png.asset.json";
-import lucianaMecatti from "@/assets/luciana-mecatti.png.asset.json";
+import sergioGraff from "@/assets/sergio-graff.png";
+import alexandreTavares from "@/assets/alexandre-tavares.png";
+import lucianaMecatti from "@/assets/luciana-mecatti.png";
 import guilhermeSanches from "@/assets/palestrantes/guilherme-sanches.jpg";
 
 const expositorFiles = import.meta.glob("@/assets/logos/expositores/*.png", {
@@ -432,7 +432,7 @@ function Index() {
             <h3 className="text-center text-xl font-medium">DAROC: O que Mudou na Avaliação de Risco dos Agroquímicos</h3>
             <p className="mt-2 text-center text-sm text-muted-foreground">3 de agosto, 17:00</p>
             <div className="mt-6 flex flex-col items-center text-center">
-              <img src={sergioGraff.url} alt="Dr. Sergio Graff" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+              <img src={sergioGraff} alt="Dr. Sergio Graff" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
               <h4 className="mt-3 text-base font-medium">Dr. Sergio Graff</h4>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Diretor médico da Toxiclin, médico, especialista em Toxicologia Médica pela AMB, mestre em Toxicologia pela USP, ex-presidente da Sociedade Brasileira de Toxicologia, presidente do Capítulo de Toxicologia Médica da Sociedade Brasileira de Clínica Médica.</p>
             </div>
@@ -442,12 +442,12 @@ function Index() {
             <p className="mt-2 text-center text-sm text-muted-foreground">4 de agosto, 14:00</p>
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
               <div className="flex flex-col items-center text-center">
-                <img src={alexandreTavares.url} alt="Alexandre Jorge Tavares dos Santos" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <img src={alexandreTavares} alt="Alexandre Jorge Tavares dos Santos" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
                 <h4 className="mt-3 text-base font-medium">Alexandre Jorge Tavares dos Santos</h4>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Engenheiro agrônomo, diretor geral da Plantec Laboratórios.</p>
               </div>
               <div className="flex flex-col items-center text-center">
-                <img src={lucianaMecatti.url} alt="Luciana Mecatti Elias" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
+                <img src={lucianaMecatti} alt="Luciana Mecatti Elias" loading="lazy" className="h-28 w-28 rounded-full object-cover" />
                 <h4 className="mt-3 text-base font-medium">Luciana Mecatti Elias</h4>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Bióloga, doutora em Microbiologia Agrícola, gerente de laboratório.</p>
               </div>
